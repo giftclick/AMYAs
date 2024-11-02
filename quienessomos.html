@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnez Miranda & Asociados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="./assets/Group 2.svg" alt="Arnez Miranda & Asociados Logo">
+            </div>
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><button id="servicios-btn" class="nav-btn">Servicios</button></li>
+            <li><button id="industrias-btn" class="nav-btn">Industrias</button></li>
+            <li><button id="contactanos-btn" class="nav-btn">Contáctanos</button></li>
+            <li><button id="quienes-somos-btn" class="nav-btn">Quiénes Somos</button></li>
+            <li><button id="se-parte-btn" class="nav-btn">Se Parte</button></li>
+        </ul>
+        <div class="language-dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="pointer-events: none;">
+                    <path
+                        d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2"
+                        stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                IDIOMA
+                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="pointer-events: none;">
+                    <path d="M7.37939 9L14.7588 15L22.1383 9" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="dropdown-content" id="languageDropdown">
+                <a href="#" onclick="translateContent('es')">Español</a>
+                <a href="#" onclick="translateContent('en')">English</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contenido que colapsa -->
+    <div id="servicios-content" class="collapsible-content">
+        <div class="services">
+            <h2>Servicios</h2>
+            <p>ARNEZ MIRANDA Y ASOCIADOS ofrece auditoría, outsourcing contable, asesoramiento tributario y consultoría
+                integral para empresas en diversos sectores, optimizando eficiencia y cumplimiento con servicios
+                personalizados y especializados.</p>
+            <button class="contact-btn">Contáctanos</button>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#" id="auditorias">
+                        <div class="menu-content-item">
+                            <div>Auditorías</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="outsourcing">
+                        <div class="menu-content-item">
+                            <div>Outsourcing</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#" id="outsourcing-contable">
+                        <div class="menu-content-item">
+                            <div>Outsourcing Contable</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="auditoria-interna">
+                        <div class="menu-content-item">
+                            <div>Outsourcing de Auditoría Interna</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li><a href="#" id="asesoramiento-tributario">
+                        <div class="menu-content-item">
+                            <div>Asesoramiento Tributario</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="tipos-auditorias">
+                        <div class="menu-content-item">
+                            <div>Nuestros Servicios Profesionales</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="consultorias">
+                        <div class="menu-content-item">
+                            <div>Consultoría</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" id="experiencia">
+                        <div class="menu-content-item">
+                            <div>Áreas de Experiencia</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="content-menu" id="content-menu">
+            <h2>Somos tus aliados</h2>
+        </div>
+    </div>
+    <div id="industrias-content" class="collapsible-content" style="display: none;">
+        <div class="industries">
+            <h2>Industrias</h2>
+            <p>ARNEZ MIRANDA Y ASOCIADOS presta sus servicios especializados a una amplia gama de industrias, ofreciendo
+                soluciones personalizadas que se ajustan a las necesidades únicas de cada sector.</p>
+            <button class="contact-btn">Contáctanos</button>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#" id="comercial">
+                        <div class="menu-content-item">
+                            <div>Comercial</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="servicios">
+                        <div class="menu-content-item">
+                            <div>Servicios</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="industria-manufacturera">
+                        <div class="menu-content-item">
+                            <div>Industrias Manufactureras</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="construccion">
+                        <div class="menu-content-item">
+                            <div>Construcción</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="entidades-sin-fines-lucro">
+                        <div class="menu-content-item">
+                            <div>Entidades sin fines de lucro</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="cooperativas">
+                        <div class="menu-content-item">
+                            <div>Cooperativas</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="sector-publico">
+                        <div class="menu-content-item">
+                            <div>Sector Público</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="no-clasificados">
+                        <div class="menu-content-item">
+                            <div>No Clasificados</div>
+                            <div>
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="#EEEDDF"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.28955 16.0784H31.5238M31.5238 16.0784L19.9067 6.89758M31.5238 16.0784L19.9067 25.2592"
+                                        stroke="#EEEDDF" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="content-menu" id="content-menu-industries">
+            <h2>Explora las Industrias que Servimos</h2>
+        </div>
+    </div>
+    <div class="container-who" id="quienes-somos-section">
+        <div class="text-box-who">
+            <h1>Quienes Somos</h1>
+            <h2>ARNEZ MIRANDA Y ASOCIADOS</h2>
+            <p>
+                Es una consultora de auditoría y consultoría. Somos expertos en Contabilidad, Auditoría,
+                Consultoría, Asesoramiento Impositivo y Registro de Marca.
+            </p>
+        </div>
+        <div class="image-box-who">
+            <!-- Background image here -->
+        </div>
+    </div>
+
+    <div class="values-container">
+        <!-- Sección de valores alineada a la izquierda -->
+        <div class="values-list">
+            <div class="value-item">
+                <span class="value-icon">
+                    <svg width="114" height="118" viewBox="0 0 114 118" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="114" height="118" fill="url(#pattern0_72_4440)" />
+                        <defs>
+                            <pattern id="pattern0_72_4440" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_72_4440"
+                                    transform="matrix(0.0111111 0 0 0.0107345 0 0.0169492)" />
+                            </pattern>
+                            <image id="image0_72_4440" width="90" height="90"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+                </span>
+                <p>Contamos con un equipo de profesionales capacitados para encarar el nivel de actividad y cubrir las
+                    exigencias de especialización. Estas características nos han dotado de una inobjetable reputación en
+                    la prestación de servicios de calidad.</p>
+            </div>
+            <div class="value-item">
+                <span class="value-icon">
+                    <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="104" height="104" fill="url(#pattern0_72_4441)" />
+                        <defs>
+                            <pattern id="pattern0_72_4441" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_72_4441" transform="scale(0.0111111)" />
+                            </pattern>
+                            <image id="image0_72_4441" width="90" height="90"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+                </span>
+                <p>Nuestro objetivo es ayudar a nuestros clientes a mejorar su negocio generando soluciones
+                    profesionales en las áreas que demanden.</p>
+            </div>
+            <div class="value-item">
+                <span class="value-icon">
+                    <svg width="104" height="107" viewBox="0 0 104 107" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="104" height="107" fill="url(#pattern0_72_4442)" />
+                        <defs>
+                            <pattern id="pattern0_72_4442" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_72_4442" transform="matrix(0.01 0 0 0.00971963 0 0.0140187)" />
+                            </pattern>
+                            <image id="image0_72_4442" width="100" height="100"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEeklEQVR4nO2bu4sVSRTGf+ITEXEcQQNnBHHXFRE0mVDBR+IfoAgaiK7uf2CqsIH4CDRRI0FBfKEmJqKCmGigBhtsoiK7LjqujxkdX4FzpPVcuDTV3fPo231un/qgonvv11+d71bVqVPVEBEREREREWERfcBl4L22q8DyukV5NuMNIKn2Vj+LqBiXA2a02sWqxUTwY4rKMmQ4Bqh6vMsxZKgGPe5xO8eQC+6jUzHWA98yzHgNLK5akGf0As8z1o1kZEQzKsaFlBGjwOaqRUT8xO+BkXFEP4uoGMsCqe5fwKyqhUTAdOB+yozPwKoYnHpwODBV7a1Ji3usC6S414Ep7iNTA3qAf1JmvAQW1iEmgh9FwnYzkpGyMQamHuwNrBvJWhJRU4r7IWXGQ2AGztGXOpG7BPR3+JkzNPjtZnwEfsM5+jJO5F532JRQirung89rxInc+Q49c2MgxU3OySPIP5FLRsm8kqO0APgv9ZznWt11jx7ga44hoid2+3WvUAauBVLcDe6d4Ofi+XeBGe0tGUkHgfmTCN4fAd5D0QzYCoyMw4z29mGCxqzQLKqd64H3FHeqZjejgUA/AQY147qi5w/pPUL65O7PMRozE3iU+v2I98tuvcCNjOCeyvin9ur6MVQwYo4V1J2OBn63O+O7MsnWFVgNPA2I/5ITmJAx78ZgzKLUbzcFUtxkBOLVkB3Ap4Dwf4GBcXLN12lquMCYIxr00IazKMVtrCHTdPENib4b+CePB3OBfQUjJtTGkuI20pCFwJ0Mwcf0qLQMJHuTAwVrTHtLLr3hzZABnY7SQj/p9NUJ9IxhjWndWHdlyC5dqCXVngFrKnj+vIL9zZAXQ5KU9WSGwJtaP6oKVyd5F7crDVmqldhBbU8CwkZ1E5hsBqtEf045f3ETDVkCvCoQNaLlkbrQr+fkwxO4i9t1hpwtEPS4yy+WdY0hc/TOa1596WuJZfK6YN6QpOxxomB33KQ3isSiIbOBncC9cYppwhtFYsmQlcDxCZQkmvRGkdRtSHLNfrvWl4oe9r8W7tbq4v6ygW8USRWGtN97SoJ4RoN6VP/ZeQ8Y1RrQNj3oaTqk04Zk3Xsqaq90Y/crviCdNiTv3lNoNNzSTd3Mps7RdevLu/fUaoN6++IXOg+JhmQHIcmmtlR880K8G5JX/TxN9RDvhizXg5nQNFVHqireDWllWq3q5wvgnFZt64BEQ2xBoiG2INEQW5BoiC1INKTZhohxPvMQ4wGMhmArgNEQbAUwGoKtAEZDsBVA84ZY77AY5ysd1jssxvlKh/UOi3G+0mG9w2Kcr3RY77AY5ysd1jssxvlKh/UOi3G+0mG9w2Kcz7xAccZnXqA44zMvUJzxmRcozvjMCxRnfOYFijM+8wLFGZ95geKMz7xAccZnXqA44zMvUJzxmRcozvjMCxRnfOYFijM+8wLFGZ95geKMz7xAccZnXqA44zMvUJzxmRcozvjMCxRnfOYFijM+8wLFGZ95geKMz7xAccZnXqA44zMvUJzxmRcoHvi+A6tyT/jxXrrMAAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
+                </span>
+                <p>Sabemos que podemos ayudarlo en el crecimiento de su organización y estamos dispuestos a demostrarlo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Triángulo de fondo y contenedor central de "QUALITY" -->
+        <div class="values-background">
+            <svg width="1094" height="879" viewBox="0 0 1641 1318" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M276 1310L915.6 136L1524 1227.32L1293.9 1310L1267.04 1250.47H455.521L442.031 1275.99L433.038 1293.17L428.1 1303.39L276 1310Z"
+                    fill="#677D59" fill-opacity="0.06" />
+                <path d="M1216 1134L879.644 398L512 1134H1216Z" fill="white" />
+            </svg>
+        </div>
+        <div class="quality-box">
+
+            <svg width="233" height="321" viewBox="0 0 233 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="233" height="253" fill="#B3C394" />
+                <rect y="263" width="233" height="58" fill="#B3C394" />
+                <path
+                    d="M31.8438 309.24C29.3798 309.24 27.1558 308.76 25.1718 307.8C23.1878 306.808 21.4758 305.496 20.0358 303.864C18.5958 302.232 17.4758 300.392 16.6758 298.344C15.9078 296.264 15.5238 294.136 15.5238 291.96C15.5238 289.688 15.9398 287.528 16.7718 285.48C17.6038 283.4 18.7558 281.56 20.2278 279.96C21.6998 278.328 23.4278 277.048 25.4118 276.12C27.4278 275.16 29.6038 274.68 31.9398 274.68C34.3718 274.68 36.5798 275.176 38.5638 276.168C40.5798 277.16 42.2918 278.488 43.6998 280.152C45.1398 281.816 46.2438 283.672 47.0118 285.72C47.8118 287.768 48.2118 289.864 48.2118 292.008C48.2118 294.28 47.7958 296.456 46.9638 298.536C46.1638 300.584 45.0278 302.424 43.5558 304.056C42.0838 305.656 40.3398 306.92 38.3238 307.848C36.3398 308.776 34.1798 309.24 31.8438 309.24ZM31.8918 304.392C33.6198 304.392 35.1558 304.04 36.4998 303.336C37.8438 302.632 38.9638 301.688 39.8598 300.504C40.7878 299.288 41.4918 297.944 41.9718 296.472C42.4518 294.968 42.6918 293.464 42.6918 291.96C42.6918 290.36 42.4358 288.808 41.9238 287.304C41.4438 285.8 40.7238 284.472 39.7638 283.32C38.8038 282.168 37.6518 281.256 36.3078 280.584C34.9958 279.88 33.5238 279.528 31.8918 279.528C30.1638 279.528 28.6278 279.88 27.2838 280.584C25.9398 281.288 24.8038 282.248 23.8758 283.464C22.9478 284.648 22.2278 285.976 21.7158 287.448C21.2358 288.92 20.9958 290.424 20.9958 291.96C20.9958 293.56 21.2518 295.112 21.7638 296.616C22.2758 298.12 22.9958 299.448 23.9238 300.6C24.8838 301.752 26.0358 302.68 27.3798 303.384C28.7238 304.056 30.2278 304.392 31.8918 304.392ZM32.5638 297.144H37.7478L48.1158 309H42.9318L32.5638 297.144ZM67.8918 309.24C65.1718 309.24 62.8678 308.776 60.9798 307.848C59.1238 306.92 57.6198 305.656 56.4678 304.056C55.3478 302.456 54.5158 300.632 53.9718 298.584C53.4598 296.536 53.2038 294.408 53.2038 292.2V274.92H58.5798V292.2C58.5798 293.768 58.7398 295.288 59.0598 296.76C59.3798 298.2 59.8918 299.496 60.5958 300.648C61.2998 301.8 62.2438 302.712 63.4278 303.384C64.6438 304.056 66.1318 304.392 67.8918 304.392C69.6838 304.392 71.1718 304.056 72.3558 303.384C73.5718 302.68 74.5158 301.752 75.1877 300.6C75.8918 299.416 76.4038 298.104 76.7238 296.664C77.0438 295.224 77.2038 293.736 77.2038 292.2V274.92H82.6278V292.2C82.6278 294.536 82.3398 296.744 81.7638 298.824C81.2198 300.872 80.3558 302.68 79.1718 304.248C78.0198 305.784 76.5158 307 74.6598 307.896C72.8038 308.792 70.5478 309.24 67.8918 309.24ZM98.2113 274.92H103.299L116.547 309H110.883L107.283 299.736H94.1313L90.5793 309H84.8673L98.2113 274.92ZM106.227 295.752L100.755 280.824L95.0913 295.752H106.227ZM120.762 309V274.92H126.138V304.248H144.426V309H120.762ZM148.793 309V274.92H154.169V309H148.793ZM186.879 279.672H175.551V309H170.127V279.672H158.751V274.92H186.879V279.672ZM193.945 274.92L203.353 291.864L212.857 274.92H218.761L206.041 296.808V309H200.665V296.712L188.041 274.92H193.945Z"
+                    fill="white" />
+                <path
+                    d="M30 297C34.5 298 44 309 44 309H49.5C49.5 309 43.7996 301.68 38.5 297C35.282 294.158 33.5 293 30 292.5C26.5 292 20.5 295.5 20.5 295.5L22.5 300C22.5 300 25.5 296 30 297Z"
+                    fill="white" />
+                <path
+                    d="M19 228.628L118.938 30L214 214.64L182.312 226.95L178.047 228.628L173.849 218.557H44.5938V223.593L43.375 225.831L42.7656 227.509L19 228.628Z"
+                    fill="#262D46" />
+                <path d="M165.859 198.974L113.453 73.6421L56.1719 198.974H165.859Z" fill="#B3C394" />
+                <path d="M38.5 228.628H19L34.2344 198.974H56.1719L39.1094 228.628H38.5Z" fill="#262D46" />
+                <path d="M42.7656 228.628L113.453 73.6421H109.797L47.0312 214.081L39.1094 228.628H42.7656Z"
+                    fill="#262D46" />
+            </svg>
+
+        </div>
+    </div>
+
+    <section class="que-hacemos">
+        <h1>Que Hacemos</h1>
+        <div class="service-item">
+            <div class="icon">
+                <svg width="72" height="60" viewBox="0 0 72 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M47.8381 52.5V12.5C47.8381 11.1739 47.2082 9.90215 46.0869 8.96447C44.9657 8.02678 43.4449 7.5 41.8592 7.5H29.9014C28.3157 7.5 26.795 8.02678 25.6737 8.96447C24.5524 9.90215 23.9225 11.1739 23.9225 12.5V52.5M11.9647 17.5H59.7959C63.0979 17.5 65.7748 19.7386 65.7748 22.5V47.5C65.7748 50.2614 63.0979 52.5 59.7959 52.5H11.9647C8.66268 52.5 5.98584 50.2614 5.98584 47.5V22.5C5.98584 19.7386 8.66268 17.5 11.9647 17.5Z"
+                        stroke="#758D70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="content">
+                <h2>Equipo de Trabajo</h2>
+                <p>Nuestro objetivo es ayudar a nuestros clientes a mejorar su negocio generando soluciones
+                    profesionales en las áreas que demanden.</p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <div class="icon">
+                <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_72_2392)">
+                        <path
+                            d="M41.022 6.07178V17.7384M41.022 52.7384V64.4051M20.6232 14.6176L28.7885 22.8718M53.2555 47.6051L61.4208 55.8593M12.1694 35.2384H23.7105M58.3335 35.2384H69.8746M20.6232 55.8593L28.7885 47.6051M53.2555 22.8718L61.4208 14.6176"
+                            stroke="#758D70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_72_2392">
+                            <rect width="69.2462" height="70" fill="white" transform="translate(0.628418 0.0717773)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="content">
+                <h2>Integridad</h2>
+                <p>Para nosotros la integridad es importante, y nos hace su certero intermediario y confidente.
+                    Enfatizamos la necesidad de conocer permanentemente la situación del cliente y de su actividad.</p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <div class="icon">
+                <svg width="70" height="56" viewBox="0 0 70 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M34.5831 16.3333C34.5831 13.858 33.3702 11.484 31.2111 9.73367C29.052 7.98333 26.1237 7 23.0704 7H5.80127V42H25.9486C28.2386 42 30.4348 42.7375 32.0541 44.0503C33.6734 45.363 34.5831 47.1435 34.5831 49M34.5831 16.3333V49M34.5831 16.3333C34.5831 13.858 35.796 11.484 37.9551 9.73367C40.1142 7.98333 43.0425 7 46.0958 7H63.3649V42H43.2177C40.9276 42 38.7314 42.7375 37.1121 44.0503C35.4928 45.363 34.5831 47.1435 34.5831 49"
+                        stroke="#758D70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="content">
+                <h2>Dedicación</h2>
+                <p>Con nuestra dedicación personal y motivación, garantizamos resultados a tiempo. Nuestra premisa
+                    básica es el compromiso con el servicio al cliente. Desarrollamos la mejor relación posible, en el
+                    marco de un servicio profesional y objetivo.</p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <div class="icon">
+                <svg width="63" height="65" viewBox="0 0 63 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M58.5064 44.3744C56.6615 48.9641 53.776 53.0086 50.102 56.1541C46.4281 59.2997 42.0776 61.4505 37.4309 62.4187C32.7842 63.3869 27.9829 63.1428 23.4465 61.7079C18.9102 60.273 14.7771 57.691 11.4085 54.1875C8.03993 50.684 5.53844 46.3658 4.12275 41.6103C2.70706 36.8548 2.42027 31.8069 3.28746 26.908C4.15464 22.009 6.1494 17.408 9.09734 13.5074C12.0453 9.60674 15.8566 6.52518 20.1982 4.53209M60.7974 32.5071C60.7974 28.5009 60.0473 24.5338 58.5899 20.8326C57.1326 17.1313 54.9965 13.7682 52.3036 10.9353C49.6108 8.10248 46.4139 5.85534 42.8955 4.32222C39.3772 2.78909 35.6062 2 31.7979 2V32.5071H60.7974Z"
+                        stroke="#758D70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="content">
+                <h2>Valoración del negocio</h2>
+                <p>Cada cliente se desempeña en un mercado extremadamente competitivo. Nuestro soporte integrado le
+                    ofrece a usted valor agregado. Enfatizamos el cumplimiento de prioridades y plazos requeridos por
+                    nuestros Clientes.</p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+    </section>
+    <section id="contactanos-section" class="preview">
+        <h1>Contáctanos</h1>
+        <p>Descubre cómo nuestras auditorías internas pueden mejorar la eficiencia y seguridad de tu organización.</p>
+        <button onclick="window.location.href='contacto.html'"><svg width="66" height="66" viewBox="0 0 96 96"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M88 24C88 19.6 84.4 16 80 16H16C11.6 16 8 19.6 8 24M88 24V72C88 76.4 84.4 80 80 80H16C11.6 80 8 76.4 8 72V24M88 24L48 52L8 24"
+                    stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></button>
+    </section>
+    <div class="publish-section">
+        <h1>Publicaciones recientes</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="./assets/origami.jpg" alt="Origami on colored paper">
+                <div class="card-content">
+                    <h2><a href="#">Cómo reconstruir un negocio con agilidad y crear resiliencia</a></h2>
+                    <p>El liderazgo decisivo, la capacidad de respuesta basada en datos y la capacidad de remodelar
+                        rápidamente son la clave...</p>
+                    <span class="date">8 jul 2019</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/robot.jpg" alt="Robot and technology visualization">
+                <div class="card-content">
+                    <h2><a href="#">Is your portfolio fit for the future or fashioned only on the past?</a></h2>
+                    <p>El liderazgo decisivo, la capacidad de respuesta basada en datos y la capacidad de remodelar
+                        rápidamente son la clave...</p>
+                    <span class="date">8 jul 2019</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/negocio.jpg" alt="Origami on colored paper">
+                <div class="card-content">
+                    <h2><a href="#">Is your portfolio fit for the future or fashioned only on the past?</a></h2>
+                    <p>El liderazgo decisivo, la capacidad de respuesta basada en datos y la capacidad de remodelar
+                        rápidamente son la clave...</p>
+                    <span class="date">8 jul 2019</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ronald Acarapi - Todos los derechos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #627c68;
+}
+
+a:active {
+  color: #627c68;;
+  text-decoration: none;
+}
+
+.preview {
+  height: 350px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0efdb;
+  padding: 10px 20px;
+  height: 120px;
+}
+
+.logo img {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a,
+.nav-links li .nav-btn {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 120px;
+  padding-inline: 10px;
+}
+
+/* Efecto de hover sobre los botones */
+.nav-links li a:hover,
+.nav-links li .nav-btn:hover {
+  color: #ffff;
+  background-color: #627c68;
+  transition: background-color 0.3s ease;
+}
+
+/* Línea blanca solo cuando el botón está en hover */
+.nav-links li a:hover::after,
+.nav-links li .nav-btn:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #ffffff; /* Línea blanca */
+}
+
+.nav-links li a::after,
+.nav-links li .nav-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: transparent; /* Línea invisible por defecto */
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a,
+.nav-links li .nav-btn {
+  color: #627c68;
+  height: 120px;
+  padding-inline: 10px;
+}
+
+.nav-links li a.active,
+.nav-links li .nav-btn.active {
+  color: #ffff; /* Cambiar color de texto al estado activo */
+  background-color: #627c68; /* Cambiar color de fondo al estado activo */
+}
+
+/* Línea blanca en el estado activo */
+.nav-links li a.active::after,
+.nav-links li .nav-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #ffffff; /* Línea blanca */
+}
+
+.dropbtn {
+  background-color: #fff0;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.dropbtn:hover {
+  color: #627c68;
+}
+
+/* Contenido colapsable */
+.collapsible-content {
+  display: flex;
+  background-color: #718a77;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #ffff;
+}
+
+.services,
+.industries {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 25px;
+  width: 35%;
+  padding-right: 100px;
+  margin-left: 50px;
+  line-height: 1.7em;
+}
+
+.services > h2,
+p {
+  margin-block: 25px;
+}
+
+.industries > h2,
+p {
+  margin-block: 25px;
+  line-height: 1.7em;
+}
+
+.contact-btn {
+  background-color: #627c6800;
+  color: white;
+  padding: 10px 60px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu {
+  width: 33%;
+  /*! align-content: center; */
+  /*! color: #ffff; */
+  padding-block: 35px;
+}
+
+.content-menu {
+  width: 32%;
+  padding: 25px;
+  background-color: #f0efdb;
+  color: #627c68;
+}
+
+.audit-list {
+  list-style: square;
+  font-weight: bold;
+  line-height: 1.7em;
+  margin-left: 15px;
+}
+
+.menu-content-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu ul li {
+  padding: 5px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-content-item:hover,
+.menu-content-item.active {
+  background-color: #eeeddf;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+.menu-content-item:hover a,
+.menu-content-item.active a {
+  color: #20263e;
+}
+
+.menu-content-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+  padding-left: 15px;
+  position: relative; /* Necesario para el pseudoelemento */
+}
+
+.menu-content-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  width: 5px;
+  height: 36.8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.menu-content-item:hover::before,
+.menu-content-item.active::before {
+  background-color: #627c68;
+}
+
+.menu-content-item:hover {
+  background-color: #eeeddf; /* Ya existente */
+}
+
+.menu-content-item:hover a {
+  color: #20263e; /* Ya existente */
+}
+
+/* Aplicar las líneas arriba y abajo de cada li */
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #ffff;
+}
+
+.menu ul li {
+  padding: 0px 0;
+  position: relative;
+}
+
+.menu ul li::before,
+.menu ul li::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  background-color: #f0eedd;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.menu ul li::before {
+  top: 0;
+}
+
+.menu ul li::after {
+  bottom: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a.active {
+  text-decoration: none;
+  color: black;
+}
+
+/* Estilos del menú hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+/* Ocultar el menú de navegación en pantallas pequeñas */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: 0px;
+    position: absolute;
+    /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
+  }
+
+  .nav-links {
+    display: none; /* Ocultar el menú de enlaces inicialmente */
+    flex-direction: column; /* Cambiar los enlaces a una columna cuando se muestren */
+    width: 100%; /* Asegurar que ocupen el ancho completo */
+  }
+
+  .nav-links.active {
+    display: flex; /* Mostrar el menú cuando se haga clic en la hamburguesa */
+    background-color: #f0eedd; /* Fondo del menú en móviles */
+    position: absolute; /* Asegura que el menú flote */
+    top: 120px; /* Posicionar justo debajo de la barra de navegación */
+    left: 0;
+    height: 100%;
+    z-index: 4;
+  }
+
+  .nav-links li {
+    text-align: left;
+    width: 100%;
+    padding: 0px 20px;
+    z-index: 3;
+    background-color: #eeeddf;
+    height: 103px;
+  }
+
+  .nav-links li a,
+  .nav-links li .nav-btn {
+    color: #627c68;
+    height: 50px;
+    padding-inline: 10px;
+    font-size: 23px;
+  }
+
+  .nav-links li a,
+  .nav-links li .nav-btn {
+    color: #627c68;
+    width: 100%;
+    text-align: left;
+    padding-inline: 10px;
+  }
+
+  .collapsible-content {
+    display: block !important;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .services,
+  .industries {
+    padding-left: 15px;
+    width: 100%;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+
+  .content-menu {
+    width: 100%;
+    padding: 25px;
+    background-color: #f0eedd;
+    color: #627c68;
+  }
+
+  .logo img {
+    width: 0%;
+    margin-left: 0px;
+  }
+  
+  .opportunities {
+    flex-direction: column;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .que-hacemos {
+    margin-inline: 0px !important;
+  }
+  
+  .values-container {
+    margin-inline: 0px !important;
+  }
+  
+  .values-list {
+    width: 100% !important;;
+    margin-top: 150px;
+  }
+  
+  .quality-box {
+    right: -15% !important;
+    top: -4% !important;
+  }
+  
+  .text-box-who {
+    width: 100% !important;
+    height: 400px;
+  }
+  
+  .container-who {
+    flex-direction: column;
+  }
+  
+  .values-background>svg {
+    overflow: hidden !important;
+    width: 100%;
+  }
+  .values-background{
+    top: 60% !important;;
+    overflow: hidden !important;
+    right: 0% !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .que-hacemos {
+    margin-inline: 0px !important;
+  }
+  
+  .values-container {
+    margin-inline: 0px !important;
+  }
+  
+  .values-list {
+    width: 100% !important;;
+    margin-top: 150px;
+  }
+  
+  .quality-box {
+    right: 0% !important;
+    top: -4% !important;
+  }
+  
+  .text-box-who {
+    width: 100% !important;
+    height: 400px;
+  }
+  
+  .container-who {
+    flex-direction: column;
+  }
+  
+  .values-background>svg {
+    overflow: hidden !important;
+    width: 100%;
+  }
+  .values-background{
+    top: 60% !important;;
+    overflow: hidden !important;
+    right: 0% !important;
+  }
+}
