@@ -72,6 +72,7 @@ body {
 /* Estado inicial (sin scroll) */
 .navbar .logo {
   width: 90%; /* Ancho inicial del contenedor */
+  margin-left: 45px;
 }
 .navbar .logo img {
   clip-path: inset(0 0 0 0); /* Imagen completamente visible */
