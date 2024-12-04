@@ -36,17 +36,26 @@ body {
   z-index: 55555;
 }
 
-.logo img {
-  width: 80%;
-  margin-left: 50px;
-  transition: all 0.3s ease;
+
+/* Contenedor de la imagen */
+.logo {
+  position: relative;
+  width: 80%; /* Limita la visibilidad a solo el área del logo */
+  height: auto; /* Ajusta automáticamente la altura */
+  overflow: hidden; /* Oculta la parte que excede del contenedor */
+  transition: all 0.3s ease; /* Suaviza los cambios */
 }
 
-.navbar.scrolled .logo img {
-  width: 150px; /* Limita la anchura visible a 150px */
-  margin-left: 0; /* Elimina el margen para centrar el logo restante */
-  overflow: hidden; /* Oculta el resto del logo */
+.logo img {
+  width: 100%; /* Mantén el tamaño original de la imagen */
+  margin-left: 0; /* Posición inicial: muestra todo el logo y las letras */
+  transition: margin-left 0.3s ease; /* Suaviza el movimiento al hacer scroll */
 }
+
+/* Cuando se hace scroll */
+.navbar.scrolled .logo img {
+  margin-left: 86.5%; /* Mueve la imagen hacia la derecha, ocultando las letras */
+} 
 
 .nav-links {
   list-style-type: none;
