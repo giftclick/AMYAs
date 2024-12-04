@@ -31,11 +31,21 @@ body {
   background-color: #f0efdb;
   padding: 10px 20px;
   height: 120px;
+  position: sticky;
+  top: 0;
+  z-index: 55555;
 }
 
 .logo img {
   width: 80%;
   margin-left: 50px;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .logo img {
+  width: 150px; /* Limita la anchura visible a 150px */
+  margin-left: 0; /* Elimina el margen para centrar el logo restante */
+  overflow: hidden; /* Oculta el resto del logo */
 }
 
 .nav-links {

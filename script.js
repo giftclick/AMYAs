@@ -355,3 +355,12 @@ window.onclick = function (event) {
         }
     }
 }
+
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) { // Cambia el número según cuándo quieres activar el efecto
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
