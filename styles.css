@@ -36,26 +36,55 @@ body {
   z-index: 55555;
 }
 
-
-/* Contenedor de la imagen */
+/* Contenedor del logo */
 .logo {
   position: relative;
-  width: 80%; /* Limita la visibilidad a solo el área del logo */
-  height: auto; /* Ajusta automáticamente la altura */
-  overflow: hidden; /* Oculta la parte que excede del contenedor */
-  transition: all 0.3s ease; /* Suaviza los cambios */
+  width: 90%; /* Ancho inicial */
+  height: auto;
+  overflow: hidden; /* Oculta lo que exceda del contenedor */
+  transition: width 0.5s ease-in-out; /* Suaviza el cambio de tamaño del contenedor */
+  will-change: width;
 }
 
+/* Imagen del logo */
 .logo img {
-  width: 100%; /* Mantén el tamaño original de la imagen */
-  margin-left: 0; /* Posición inicial: muestra todo el logo y las letras */
-  transition: margin-left 0.3s ease; /* Suaviza el movimiento al hacer scroll */
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition: clip-path 0.5s ease-in-out, transform 0.5s ease-in-out; /* Suaviza el recorte y tamaño */
+  will-change: clip-path, transform;
+}
+
+/* Links de navegación */
+.nav-links {
+  display: flex;
+  list-style: none;
+  transform: translateX(0); /* Posición inicial */
+  transition: transform 0.5s ease-in-out; /* Suaviza el movimiento horizontal */
+  will-change: transform;
+}
+
+/* Estado inicial (sin scroll) */
+.navbar .logo {
+  width: 90%; /* Ancho inicial del contenedor */
+}
+.navbar .logo img {
+  clip-path: inset(0 0 0 0); /* Imagen completamente visible */
+}
+.navbar .nav-links {
+  transform: translateX(0); /* Sin desplazamiento */
 }
 
 /* Cuando se hace scroll */
+.navbar.scrolled .logo {
+  width: 80%; /* Cambia el ancho del contenedor */
+}
 .navbar.scrolled .logo img {
-  margin-left: 86.5%; /* Mueve la imagen hacia la derecha, ocultando las letras */
-} 
+  clip-path: inset(0 86.5% 0 0); /* Recorta dejando visible solo el texto */
+}
+.navbar.scrolled .nav-links {
+  transform: translateX(-50%); /* Ocupa el espacio dejado por el logo */
+}
 
 .nav-links {
   list-style-type: none;
