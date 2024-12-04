@@ -54,7 +54,7 @@ body {
 /* Imagen del logo */
 .logo img {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: auto;
   transition: clip-path 0.5s ease-in-out, transform 0.5s ease-in-out; /* Suaviza el recorte y tamaño */
   will-change: clip-path, transform;
