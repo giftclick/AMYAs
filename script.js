@@ -67,17 +67,24 @@ document.querySelectorAll('.menu-content-item').forEach(item => {
 // Escucha los clics en los enlaces del menú
 document.getElementById('auditorias').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Auditorías', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> utilizamos las técnicas más avanzadas de auditoría a nivel internacional que requieren una planificación y una coordinación de todos los recursos que interviene en ella.<br><br>Con estas técnicas logramos que el resultado de cada auditoría sea más eficiente y económica, desarrollando planes de trabajo para cada cliente en particular, considerando su segmento de mercado y ubicación geográfica. 
+    updateContent('Auditorías', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> utilizamos las técnicas más avanzadas de
+        auditoría a nivel internacional que requieren una planificación y una coordinación de todos
+        los recursos que interviene en ella.<br><br>Con estas técnicas logramos que el resultado de cada auditoría sea más eficiente y
+        económica, desarrollando planes de trabajo para cada cliente en particular, considerando su
+        segmento de mercado y ubicación geográfica. 
         <ul class="audit-list">
        <li><a href="auditorias.html?scroll=estados-financieros">Auditoría de estados financieros</a></li>
         <li><a href="auditorias.html?scroll=especiales">Auditorias especiales</a></li>
         <li><a href="auditorias.html?scroll=interna">Auditoría Interna</a></li>
+        <li><a href="auditorias.html?scroll=interna">Auditoría forence</a></li>
         </ul>`);
 });
 
 document.getElementById('outsourcing').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Outsourcing', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> buscamos satisfacer las necesidades de información y control que tienen aquellas Empresas que no cuentan con una estructura que les permita desarrollar dichas actividades.<br><br>El outsourcing que brindamos a las Empresas comprende:
+    updateContent('Outsourcing', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> buscamos satisfacer las necesidades de
+información y control que tienen aquellas Empresas que no cuentan con una estructura que
+les permita desarrollar dichas actividades.<br><br>El outsourcing que brindamos a las Empresas comprende:
         <ul class="audit-list">
         <li> El procesamiento de la información de la empresa y la emisión de información financiera requerida.</li> 
         <li>Auditorías internas mediante el cumplimiento de revisiones de acuerdo a un plan de trabajo diseñado a tal efecto.</li></ul>`);
@@ -105,9 +112,15 @@ document.getElementById('auditoria-interna').addEventListener('click', function 
 
 document.getElementById('asesoramiento-tributario').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Asesoramiento Tributario', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> reconocemos como una de las principales necesidades actuales de las empresas es la correcta determinación de la carga tributaria por el Servicio de Impuestos Nacionales SIN, tanto a nivel empresarial como individual. <br><br>
-Nuestros profesionales expertos en tributación, comprenden las consecuencias fiscales implícitas en cada decisión; para lo cual trabajan en forma conjunta con nuestros clientes para asegurar que no se pierda ninguna oportunidad de economizar en el pago de impuestos mediante el uso de todas las herramientas fiscales disponibles.<br><br>
-Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y decretos supremos y normas reglamentarias.
+    updateContent('Asesoramiento Tributario', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> reconocemos como una de las principales
+    necesidades actuales de las empresas es la correcta determinación de la carga tributaria por
+    el Servicio de Impuestos Nacionales SIN, tanto a nivel empresarial como individual. <br><br>
+    Nuestros profesionales expertos en tributación, comprenden las consecuencias fiscales
+    implícitas en cada decisión; para lo cual trabajan en forma conjunta con nuestros clientes
+    para asegurar que no se pierda ninguna oportunidad de economizar en el pago de impuestos
+    mediante el uso de todas las herramientas fiscales disponibles.<br><br>
+    Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y
+    decretos supremos y normas reglamentarias.
 `);
 });
 
@@ -125,12 +138,19 @@ document.getElementById('tipos-auditorias').addEventListener('click', function (
 
 document.getElementById('consultorias').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Consultoría', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> ampliamos nuestros servicios para brindar un asesoramiento integral a las instituciones, por lo que ofrecemos los siguientes servicios de consultoría.<br><br>
-    Nuestros consultores expertos en revaluos técnicos, inventarios, elaboración de manuales, etc. Comprenden la necesidad de nuestros clientes y se encuentran comprometidos en brindar un servicio eficiente y económico.<br><br>
+    updateContent('Consultoría', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> ampliamos nuestros servicios para brindar un
+    asesoramiento integral a las instituciones, por lo que ofrecemos los siguientes servicios de
+    consultoría.<br><br>
+    Nuestros consultores expertos en revaluos técnicos, inventarios, elaboración de manuales,
+etc. Comprenden la necesidad de nuestros clientes y se encuentran comprometidos en
+brindar un servicio eficiente y económico.<br><br>
     <strong>Nuestros Servicios Profesionales:</strong><ul class="audit-list">
+    <li>Evaluaciones Técnicas de Medio Término, Finales y Post a Proyectos.</li>
+    <li>Fundraising para entidades sin fines de lucro.</li>
+    <li>Sistematización de experiencias.</li>
+    <li>Líneas base de proyectos.</li>    
     <li>Revaluó Técnico de Activos Fijos.</li>
     <li>Inventarios.</li>
-    <li>Evaluaciones Técnicas de Medio Término, Finales y Post a Proyectos.</li>
     <li>Elaboración e implementación de sistemas administrativos contables y de costos.</li></ul>
 `);
 });
@@ -138,11 +158,11 @@ document.getElementById('consultorias').addEventListener('click', function (even
 document.getElementById('experiencia').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace recargue la página
     updateContent('Áreas de Experiencia', `Estas son algunas áreas en que desarrolla sus actividades ARNEZ MIRANDA Y ASOCIADOS.<ul class="audit-list">
+    <li>Entidades sin fines de lucro.</li>
     <li>Comercial.</li>
     <li>Servicios.</li>
     <li>Industrias manufactureras.</li>
     <li>Construcción.</li>
-    <li>Entidades sin fines de lucro.</li>
     <li>Cooperativas.</li>
     <li>Públicas.</li>
     <li>No clasificados.</li>
