@@ -87,27 +87,10 @@ información y control que tienen aquellas Empresas que no cuentan con una estru
 les permita desarrollar dichas actividades.<br><br>El outsourcing que brindamos a las Empresas comprende:
         <ul class="audit-list">
         <li> El procesamiento de la información de la empresa y la emisión de información financiera requerida.</li> 
-        <li>Auditorías internas mediante el cumplimiento de revisiones de acuerdo a un plan de trabajo diseñado a tal efecto.</li></ul>`);
-});
-
-document.getElementById('outsourcing-contable').addEventListener('click', function (event) {
-    event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Outsourcing Contable', `Nuestro outsourcing contable se encarga de: 
-        <ul class="audit-list">
-        <li> Inscripción ante Organismos Tributarios, Societarios, Fondos de Pensiones, Ministerio de Trabajo y otros exigidos por ley.</li> 
-        <li>Recopilación y registro de la información contable.</li>
-        <li>Emisión de estados contables.</li>
-        <li>Liquidación de sueldos y salarios.</li>
-        <li>Elaboración y presentación de declaraciones juradas mensuales y anuales, tributarias, laborales y otras exigidas por la seguridad social.</li>
-        <li>Toma de inventarios físicos.</li>
-        <li>Compilación de estados contables.</li></ul>`);
-});
-
-document.getElementById('auditoria-interna').addEventListener('click', function (event) {
-    event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Outsourcing de Auditoría Interna', `Ofrecemos outsourcing de auditoría interna: <ul class="audit-list">
-        <li>Auditoría de cumplimiento de control interno.</li> 
-        <li>Auditoría de cumplimiento de los procedimientos administrativos internos.</li></ul>`);
+        <li>Auditorías internas mediante el cumplimiento de revisiones de acuerdo a un plan de trabajo diseñado a tal efecto.</li>
+        <li><a href="outsourcing.html?scroll=interna">Outsourcing Contable</a></li>
+        <li><a href="outsourcing.html?scroll=interna">Outsourcing de Auditoría Interna</a></li>
+        </ul>`);
 });
 
 document.getElementById('asesoramiento-tributario').addEventListener('click', function (event) {
@@ -120,21 +103,10 @@ document.getElementById('asesoramiento-tributario').addEventListener('click', fu
     para asegurar que no se pierda ninguna oportunidad de economizar en el pago de impuestos
     mediante el uso de todas las herramientas fiscales disponibles.<br><br>
     Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y
-    decretos supremos y normas reglamentarias.
+    decretos supremos y normas reglamentarias.<br><br><ul><li><a href="tributario.html?scroll=interna">Nuestros Servicios Profesionales</a></li></ul>
 `);
 });
 
-document.getElementById('tipos-auditorias').addEventListener('click', function (event) {
-    event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Nuestros Servicios Profesionales', `Ofrecemos Servicios Profesionales en:
-        <ul class="audit-list">
-        <li>Planificación tributaria.</li> 
-        <li>Asesoramiento integral en materia fiscal.</li>
-        <li>Preparación y/o revisión en declaraciones juradas de impuestos.</li>
-        <li>Análisis del impacto impositivo en los procesos de transformación de empresas (fusiones y absorciones).</li>
-        <li>Representación de las empresas durante las fiscalizaciones.</li>
-        </ul>`);
-});
 
 document.getElementById('consultorias').addEventListener('click', function (event) {
     event.preventDefault(); // Evita que el enlace recargue la página
@@ -154,21 +126,6 @@ brindar un servicio eficiente y económico.<br><br>
     <li>Elaboración e implementación de sistemas administrativos contables y de costos.</li></ul>
 `);
 });
-
-document.getElementById('experiencia').addEventListener('click', function (event) {
-    event.preventDefault(); // Evita que el enlace recargue la página
-    updateContent('Áreas de Experiencia', `Estas son algunas áreas en que desarrolla sus actividades ARNEZ MIRANDA Y ASOCIADOS.<ul class="audit-list">
-    <li>Entidades sin fines de lucro.</li>
-    <li>Comercial.</li>
-    <li>Servicios.</li>
-    <li>Industrias manufactureras.</li>
-    <li>Construcción.</li>
-    <li>Cooperativas.</li>
-    <li>Públicas.</li>
-    <li>No clasificados.</li>
-    </ul>`);
-});
-
 
 // Toggle visibility of the "Industrias" section
 document.getElementById("industrias-btn").addEventListener("click", function (event) {
