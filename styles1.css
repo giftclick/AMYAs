@@ -6,8 +6,8 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start;
 }
 
 .hero::before {
@@ -25,7 +25,7 @@
     position: relative;
     z-index: 2;
     color: white;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .hero-content h1 {
@@ -41,7 +41,7 @@
 .hero-content a {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #007BFF; /* Blue button */
+    background-color: #0d2744; /* Blue button */
     color: white;
     border-radius: 5px;
     font-weight: bold;
