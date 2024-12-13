@@ -103,7 +103,8 @@ document.getElementById('asesoramiento-tributario').addEventListener('click', fu
     para asegurar que no se pierda ninguna oportunidad de economizar en el pago de impuestos
     mediante el uso de todas las herramientas fiscales disponibles.<br><br>
     Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y
-    decretos supremos y normas reglamentarias.<br><br><ul><li><a href="tributario.html?scroll=interna">Nuestros Servicios Profesionales</a></li></ul>
+    decretos supremos y normas reglamentarias.<br><br>
+    <ul class="audit-list"><li><a href="tributario.html?scroll=interna">Nuestros Servicios Profesionales</a></li></ul>
 `);
 });
 
