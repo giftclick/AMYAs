@@ -630,14 +630,18 @@ p {
   }
 
   .footer-logo img {
-    height: 55px;
+    height: 50px;
     width: auto;
   }
 
   .footer-nav {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px !important;
     padding: 10px;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
