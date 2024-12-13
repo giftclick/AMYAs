@@ -1,12 +1,15 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 90vh; /* Full screen height */
-    background-image: url('./assets/negocioMAA2.jpg'); /* Replace with your image URL */
+    height: 90vh;
+    /* Full screen height */
+    background-image: url('./assets/negocioMAA2.jpg');
+    /* Replace with your image URL */
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
+    /* Align items to the top */
     justify-content: flex-start;
 }
 
@@ -17,7 +20,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Black overlay with transparency */
+    background: rgba(0, 0, 0, 0.3);
+    /* Black overlay with transparency */
     z-index: 1;
 }
 
@@ -41,14 +45,16 @@
 .hero-content a {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #0d2744; /* Blue button */
+    background-color: #0d2744;
+    /* Blue button */
     color: white;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .hero-content a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
+    /* Darker blue on hover */
 }
 
 .preview {
@@ -81,6 +87,7 @@
     border-radius: 61px;
     width: 85px;
 }
+
 .preview button>svg {
     margin-left: -9px;
 }
@@ -89,6 +96,7 @@
     text-align: center;
     margin-top: 40px;
 }
+
 .preview button:hover {
     background-color: #B3C394;
 }
@@ -130,17 +138,22 @@ footer {
 
 .footer-logo {
     display: flex;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
 .footer-logo img {
-    height: 50px;
+    height: 75px;
     width: auto;
 }
 
 .footer-nav {
     display: flex;
-    gap: 40px;
+    gap: 160px;
+    padding: 40px;
+    margin-right: 15%;
 }
 
 .footer-nav ul {
@@ -154,9 +167,11 @@ footer {
 }
 
 .footer-nav ul li a {
-    color: white;
+    color: #262d46;
     text-decoration: none;
     font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
 }
 
 .footer-nav ul li a:hover {
@@ -337,7 +352,8 @@ footer {
 }
 
 .text-box-who {
-    background-color: #262d46; /* Adjusted to match the green background */
+    background-color: #262d46;
+    /* Adjusted to match the green background */
     color: #fff;
     padding: 74px;
     width: 42%;
@@ -364,7 +380,8 @@ footer {
 
 .image-box-who {
     width: 60%;
-    background-image: url('./assets/origami.jpg'); /* Replace with the path to your image */
+    background-image: url('./assets/origami.jpg');
+    /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
 }
@@ -372,7 +389,8 @@ footer {
 .que-hacemos {
     /*! width: 96%; */
     /*! text-align: center; */
-    color: #718a77; /* Color verde oscuro */
+    color: #718a77;
+    /* Color verde oscuro */
     margin-inline: 30%;
     margin-bottom: 200px;
 }
@@ -402,7 +420,8 @@ footer {
 .content h2 {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #6b8f71; /* Mismo verde */
+    color: #6b8f71;
+    /* Mismo verde */
     margin-bottom: 0.5rem;
 }
 
@@ -438,6 +457,7 @@ footer {
     width: 50%;
     /*! color: #b3c394; */
 }
+
 .values-list>div>p {
     color: #718a77;
 }
