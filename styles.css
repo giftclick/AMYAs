@@ -625,7 +625,7 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 10px !important;
     padding-top: 50px;
   }
 
