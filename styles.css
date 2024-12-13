@@ -11,7 +11,8 @@ a {
 }
 
 a:active {
-  color: #627c68;;
+  color: #627c68;
+  ;
   text-decoration: none;
 }
 
@@ -44,10 +45,13 @@ body {
 /* Contenedor del logo */
 .logo {
   position: relative;
-  width: 90%; /* Ancho inicial */
+  width: 90%;
+  /* Ancho inicial */
   height: auto;
-  overflow: hidden; /* Oculta lo que exceda del contenedor */
-  transition: width 0.5s ease-in-out; /* Suaviza el cambio de tamaño del contenedor */
+  overflow: hidden;
+  /* Oculta lo que exceda del contenedor */
+  transition: width 0.5s ease-in-out;
+  /* Suaviza el cambio de tamaño del contenedor */
   will-change: width;
 }
 
@@ -56,7 +60,8 @@ body {
   position: relative;
   width: 80%;
   height: auto;
-  transition: clip-path 0.5s ease-in-out, transform 0.5s ease-in-out; /* Suaviza el recorte y tamaño */
+  transition: clip-path 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* Suaviza el recorte y tamaño */
   will-change: clip-path, transform;
 }
 
@@ -64,32 +69,44 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  transform: translateX(0); /* Posición inicial */
-  transition: transform 0.5s ease-in-out; /* Suaviza el movimiento horizontal */
+  transform: translateX(0);
+  /* Posición inicial */
+  transition: transform 0.5s ease-in-out;
+  /* Suaviza el movimiento horizontal */
   will-change: transform;
 }
 
 /* Estado inicial (sin scroll) */
 .navbar .logo {
-  width: 90%; /* Ancho inicial del contenedor */
+  width: 90%;
+  /* Ancho inicial del contenedor */
   margin-left: 45px;
 }
+
 .navbar .logo img {
-  clip-path: inset(0 0 0 0); /* Imagen completamente visible */
+  clip-path: inset(0 0 0 0);
+  /* Imagen completamente visible */
 }
+
 .navbar .nav-links {
-  transform: translateX(0); /* Sin desplazamiento */
+  transform: translateX(0);
+  /* Sin desplazamiento */
 }
 
 /* Cuando se hace scroll */
 .navbar.scrolled .logo {
-  width: 80%; /* Cambia el ancho del contenedor */
+  width: 80%;
+  /* Cambia el ancho del contenedor */
 }
+
 .navbar.scrolled .logo img {
-  clip-path: inset(0 86.5% 0 0); /* Recorta dejando visible solo el texto */
+  clip-path: inset(0 86.5% 0 0);
+  /* Recorta dejando visible solo el texto */
 }
+
 .navbar.scrolled .nav-links {
-  transform: translateX(-50%); /* Ocupa el espacio dejado por el logo */
+  transform: translateX(-50%);
+  /* Ocupa el espacio dejado por el logo */
 }
 
 .nav-links {
@@ -132,7 +149,8 @@ body {
   left: 0;
   right: 0;
   height: 5px;
-  background-color: #ffffff; /* Línea blanca */
+  background-color: #ffffff;
+  /* Línea blanca */
 }
 
 .nav-links li a::after,
@@ -143,7 +161,8 @@ body {
   left: 0;
   right: 0;
   height: 5px;
-  background-color: transparent; /* Línea invisible por defecto */
+  background-color: transparent;
+  /* Línea invisible por defecto */
   transition: background-color 0.3s ease;
 }
 
@@ -156,8 +175,10 @@ body {
 
 .nav-links li a.active,
 .nav-links li .nav-btn.active {
-  color: #ffff; /* Cambiar color de texto al estado activo */
-  background-color: #627c68; /* Cambiar color de fondo al estado activo */
+  color: #ffff;
+  /* Cambiar color de texto al estado activo */
+  background-color: #627c68;
+  /* Cambiar color de fondo al estado activo */
 }
 
 /* Línea blanca en el estado activo */
@@ -169,7 +190,8 @@ body {
   left: 0;
   right: 0;
   height: 5px;
-  background-color: #ffffff; /* Línea blanca */
+  background-color: #ffffff;
+  /* Línea blanca */
 }
 
 .dropbtn {
@@ -210,12 +232,12 @@ body {
   line-height: 1.7em;
 }
 
-.services > h2,
+.services>h2,
 p {
   margin-block: 25px;
 }
 
-.industries > h2,
+.industries>h2,
 p {
   margin-block: 25px;
   line-height: 1.7em;
@@ -257,6 +279,7 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
 .menu ul {
   list-style-type: none;
   padding-left: 0;
@@ -290,7 +313,8 @@ p {
   align-items: center;
   margin-left: 5px;
   padding-left: 15px;
-  position: relative; /* Necesario para el pseudoelemento */
+  position: relative;
+  /* Necesario para el pseudoelemento */
 }
 
 .menu-content-item::before {
@@ -312,11 +336,13 @@ p {
 }
 
 .menu-content-item:hover {
-  background-color: #eeeddf; /* Ya existente */
+  background-color: #eeeddf;
+  /* Ya existente */
 }
 
 .menu-content-item:hover a {
-  color: #20263e; /* Ya existente */
+  color: #20263e;
+  /* Ya existente */
 }
 
 /* Aplicar las líneas arriba y abajo de cada li */
@@ -389,28 +415,28 @@ p {
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-  .show {
-    display: block;
-  }
+.show {
+  display: block;
+}
 
 @media (max-width: 768px) {
   .hamburger {
@@ -420,17 +446,28 @@ p {
     /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
   }
 
+  .hero-content {
+    padding: 50px;
+  }
+
   .nav-links {
-    display: none; /* Ocultar el menú de enlaces inicialmente */
-    flex-direction: column; /* Cambiar los enlaces a una columna cuando se muestren */
-    width: 100%; /* Asegurar que ocupen el ancho completo */
+    display: none;
+    /* Ocultar el menú de enlaces inicialmente */
+    flex-direction: column;
+    /* Cambiar los enlaces a una columna cuando se muestren */
+    width: 100%;
+    /* Asegurar que ocupen el ancho completo */
   }
 
   .nav-links.active {
-    display: flex; /* Mostrar el menú cuando se haga clic en la hamburguesa */
-    background-color: #f0eedd; /* Fondo del menú en móviles */
-    position: absolute; /* Asegura que el menú flote */
-    top: 120px; /* Posicionar justo debajo de la barra de navegación */
+    display: flex;
+    /* Mostrar el menú cuando se haga clic en la hamburguesa */
+    background-color: #f0eedd;
+    /* Fondo del menú en móviles */
+    position: absolute;
+    /* Asegura que el menú flote */
+    top: 120px;
+    /* Posicionar justo debajo de la barra de navegación */
     left: 0;
     height: 100%;
     z-index: 4;
@@ -488,53 +525,56 @@ p {
     width: 0%;
     margin-left: 0px;
   }
-  
+
   .opportunities {
     flex-direction: column;
   }
-  
+
   .divider {
     display: none;
   }
-  
+
   .card-container {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .que-hacemos {
     margin-inline: 0px !important;
   }
-  
+
   .values-container {
     margin-inline: 0px !important;
   }
-  
+
   .values-list {
-    width: 100% !important;;
+    width: 100% !important;
+    ;
     margin-top: 150px;
   }
-  
+
   .quality-box {
     right: -15% !important;
     top: -4% !important;
   }
-  
+
   .text-box-who {
     width: 100% !important;
     height: 400px;
   }
-  
+
   .container-who {
     flex-direction: column;
   }
-  
+
   .values-background>svg {
     overflow: hidden !important;
     width: 100%;
   }
-  .values-background{
-    top: 60% !important;;
+
+  .values-background {
+    top: 60% !important;
+    ;
     overflow: hidden !important;
     right: 0% !important;
   }
@@ -544,36 +584,39 @@ p {
   .que-hacemos {
     margin-inline: 0px !important;
   }
-  
+
   .values-container {
     margin-inline: 0px !important;
   }
-  
+
   .values-list {
-    width: 100% !important;;
+    width: 100% !important;
+    ;
     margin-top: 150px;
   }
-  
+
   .quality-box {
     right: 0% !important;
     top: -4% !important;
   }
-  
+
   .text-box-who {
     width: 100% !important;
     height: 400px;
   }
-  
+
   .container-who {
     flex-direction: column;
   }
-  
+
   .values-background>svg {
     overflow: hidden !important;
     width: 100%;
   }
-  .values-background{
-    top: 60% !important;;
+
+  .values-background {
+    top: 60% !important;
+    ;
     overflow: hidden !important;
     right: 0% !important;
   }
