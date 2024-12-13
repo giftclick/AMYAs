@@ -89,7 +89,7 @@ les permita desarrollar dichas actividades.<br><br>El outsourcing que brindamos 
         <li> El procesamiento de la información de la empresa y la emisión de información financiera requerida.</li> 
         <li>Auditorías internas mediante el cumplimiento de revisiones de acuerdo a un plan de trabajo diseñado a tal efecto.</li>
         <li><a href="outsourcing.html?scroll=interna">Outsourcing Contable</a></li>
-        <li><a href="outsourcing.html?scroll=interna">Outsourcing de Auditoría Interna</a></li>
+        <li><a href="outsourcing.html?scroll=interna1">Outsourcing de Auditoría Interna</a></li>
         </ul>`);
 });
 
