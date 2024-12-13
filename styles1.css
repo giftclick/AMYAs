@@ -177,6 +177,11 @@ footer {
     text-decoration: underline;
 }
 
+.footer-nav p a {
+    color: #0d2744;
+    text-decoration: none;
+}
+
 .santa {
     margin-top: 5px;
 }
