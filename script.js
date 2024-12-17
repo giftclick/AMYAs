@@ -73,10 +73,10 @@ document.getElementById('auditorias').addEventListener('click', function (event)
         económica, desarrollando planes de trabajo para cada cliente en particular, considerando su
         segmento de mercado y ubicación geográfica. 
         <ul class="audit-list">
-       <li><a href="auditorias.html?scroll=estados-financieros">Auditoría de estados financieros</a></li>
-        <li><a href="auditorias.html?scroll=especiales">Auditorias especiales</a></li>
-        <li><a href="auditorias.html?scroll=interna">Auditoría Interna</a></li>
-        <li><a href="auditorias.html?scroll=interna">Auditoría forence</a></li>
+       <li><strong><a href="auditorias.html?scroll=estados-financieros">Auditoría de estados financieros</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=especiales">Auditorias especiales</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=interna">Auditoría Interna</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=interna">Auditoría forence</a></strong></li>
         </ul>`);
 });
 
@@ -86,10 +86,10 @@ document.getElementById('outsourcing').addEventListener('click', function (event
 información y control que tienen aquellas Empresas que no cuentan con una estructura que
 les permita desarrollar dichas actividades.<br><br>El outsourcing que brindamos a las Empresas comprende:
         <ul class="audit-list">
-        <li> El procesamiento de la información de la empresa y la emisión de información financiera requerida.</li> 
+        <li>El procesamiento de la información de la empresa y la emisión de información financiera requerida.</li> 
         <li>Auditorías internas mediante el cumplimiento de revisiones de acuerdo a un plan de trabajo diseñado a tal efecto.</li>
-        <li><a href="outsourcing.html?scroll=interna">Outsourcing Contable</a></li>
-        <li><a href="outsourcing.html?scroll=interna1">Outsourcing de Auditoría Interna</a></li>
+        <li><strong><a href="outsourcing.html?scroll=interna">Outsourcing Contable</a></strong></li>
+        <li><strong><a href="outsourcing.html?scroll=interna1">Outsourcing de Auditoría Interna</a></strong></li>
         </ul>`);
 });
 
@@ -104,7 +104,9 @@ document.getElementById('asesoramiento-tributario').addEventListener('click', fu
     mediante el uso de todas las herramientas fiscales disponibles.<br><br>
     Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y
     decretos supremos y normas reglamentarias.<br><br>
-    <ul class="audit-list"><li><a href="tributario.html?scroll=interna">Nuestros Servicios Profesionales</a></li></ul>
+    <ul class="audit-list">
+    <li><strong><a href="tributario.html?scroll=interna">Nuestros Servicios Profesionales</a></strong></li>
+    </ul>
 `);
 });
 
