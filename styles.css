@@ -558,6 +558,10 @@ p {
     margin-top: 150px;
   }
 
+  .navbar.scrolled .logo img {
+    display: none;
+  }
+
   .quality-box {
     right: -15% !important;
     top: -4% !important;
@@ -632,6 +636,10 @@ p {
     flex-direction: column;
     padding-left: 10px !important;
     padding-top: 50px !important;
+  }
+
+  .santa {
+    margin-left: -75px;
   }
 
   .footer-logo img {
