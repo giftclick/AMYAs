@@ -101,6 +101,7 @@ body {
 
 .navbar.scrolled .logo img {
   clip-path: inset(0 86.5% 0 0);
+  width: 75%;
   /* Recorta dejando visible solo el texto */
 }
 
@@ -130,6 +131,7 @@ body {
   display: inline-block;
   height: 120px;
   padding-inline: 10px;
+  font-size: 15px;
 }
 
 /* Efecto de hover sobre los botones */
@@ -268,8 +270,7 @@ p {
 
 .audit-list {
   list-style: square;
-  font-weight: bold;
-  line-height: 1.7em;
+  line-height: 2em;
   margin-left: 15px;
 }
 

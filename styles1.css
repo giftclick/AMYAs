@@ -179,7 +179,6 @@ footer {
 
 .footer-nav p a, .footer-logo p a {
     color: #0d2744;
-    text-decoration: none;
 }
 
 .santa {
@@ -189,6 +188,7 @@ footer {
     display: flex;
     gap: 40px;
     margin-block: 40px;
+    margin-inline: 40px;
     justify-content: center;
 }
 
