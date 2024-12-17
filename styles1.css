@@ -132,7 +132,7 @@ footer {
     color: #262D46;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -151,8 +151,10 @@ footer {
 
 .footer-nav {
     display: flex;
-    gap: 160px;
     padding: 40px;
+    margin-right: 5%;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .footer-nav ul {
