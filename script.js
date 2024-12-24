@@ -184,7 +184,7 @@ document.getElementById('construccion').addEventListener('click', function (even
 
 document.getElementById('entidades-sin-fines-lucro').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Entidades sin fines de lucro', 'Entidades sin fines de lucro: brindamos toda nuestra experiencia de trabajo con la cooperación internacional para el cumplimiento exitoso de los proyectos ejecutados por estas instituciones.');
+    updateIndustriesContent('Entidades sin fines de lucro', 'Brindamos toda nuestra experiencia de trabajo con la cooperación internacional para el cumplimiento exitoso de los proyectos ejecutados por estas instituciones.');
 });
 
 document.getElementById('cooperativas').addEventListener('click', function (event) {
