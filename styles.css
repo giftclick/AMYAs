@@ -221,6 +221,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   color: #ffff;
+  display: none;
 }
 
 .services,
