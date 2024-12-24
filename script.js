@@ -169,12 +169,12 @@ document.getElementById('comercial').addEventListener('click', function (event) 
 
 document.getElementById('servicios').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Servicios', 'Nuestro equipo está especializado en auditoría y consultoría para el sector de servicios, apoyando a empresas en su crecimiento.');
+    updateIndustriesContent('Servicios', 'Nuestra firma entiende la necesidad de mejora continua y resiliente en la venta de servicios.');
 });
 
 document.getElementById('industria-manufacturera').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Industrias Manufactureras', 'Colaboramos con industrias manufactureras optimizando procesos y garantizando el cumplimiento de normativas.');
+    updateIndustriesContent('Industria', 'La industria en el actual mundo globalizado requiere asesoría constante para la mejora de sus procesos. Estamos dispuestos a acompañar esta mejora continua.');
 });
 
 document.getElementById('construccion').addEventListener('click', function (event) {
@@ -184,22 +184,22 @@ document.getElementById('construccion').addEventListener('click', function (even
 
 document.getElementById('entidades-sin-fines-lucro').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Entidades sin fines de lucro', 'Apoyamos a entidades sin fines de lucro a gestionar sus recursos de manera eficiente y cumplir con sus obligaciones legales.');
+    updateIndustriesContent('Entidades sin fines de lucro', 'Entidades sin fines de lucro: brindamos toda nuestra experiencia de trabajo con la cooperación internacional para el cumplimiento exitoso de los proyectos ejecutados por estas instituciones.');
 });
 
 document.getElementById('cooperativas').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Cooperativas', 'Ofrecemos auditoría y asesoría para cooperativas, ayudándolas a mejorar su administración y desempeño.');
+    updateIndustriesContent('Cooperativas', 'El sector corporativo enfrenta objetivos desafiantes ante la coyuntura actual y nuestra firma como asesores de negocios ofrece las herramientas necesarias para el cumplimiento exitoso de estos objetivos.');
 });
 
 document.getElementById('sector-publico').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Públicas', 'Arnez Miranda & Asociados trabaja con entidades públicas para mejorar su gestión financiera y administrativa.');
+    updateIndustriesContent('Sector público', 'Las instituciones estatales presentan desafíos a largo plazo, por lo que demandan equipos multidisciplinarios.');
 });
 
 document.getElementById('no-clasificados').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('No Clasificados', 'Enfrentamos desafíos únicos para sectores no clasificados, proporcionando soluciones personalizadas que responden a sus necesidades.');
+    updateIndustriesContent('No Clasificados', 'Este sector tiene características peculiares, por lo que requiere soluciones a medida de sus desafíos.');
 });
 
 
