@@ -1,4 +1,3 @@
-// Toggle the navigation menu
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
@@ -22,190 +21,209 @@ function closeMenuAndScrollTo(sectionId, buttonId) {
     document.getElementById(buttonId).classList.add('active');
 }
 
-// Toggle visibility of the "Services" section
-document.getElementById("services-btn").addEventListener("click", function (event) {
-    event.preventDefault(); // Prevents the link from reloading the page
-    var servicesContent = document.getElementById("services-content");
-    var industriesContent = document.getElementById("industries-content");
+// Toggle visibility of the "Servicios" section
+document.getElementById("servicios-btn").addEventListener("click", function (event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    var serviciosContent = document.getElementById("servicios-content");
+    var industriasContent = document.getElementById("industrias-content");
 
-    // Close the Industries section if it's open
-    industriesContent.style.display = "none";  // Hide Industries if open
+    // Cerrar la sección Industrias si está abierta
+    industriasContent.style.display = "none";  // Hide Industrias if open
 
-    // Remove 'active' class from all menu buttons
+    // Eliminar la clase 'active' de todos los botones del menú
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
 
-    // Toggle the Services section
-    if (servicesContent.style.display === "flex") {
-        servicesContent.style.display = "none";
+    // Alternar la sección Servicios
+    if (serviciosContent.style.display === "flex") {
+        serviciosContent.style.display = "none";
     } else {
-        servicesContent.style.display = "flex";
-        this.classList.add('active'); // Add the active class if it's opened
-        servicesContent.scrollIntoView({ behavior: "smooth" }); // Scroll to the section
+        serviciosContent.style.display = "flex";
+        this.classList.add('active'); // Añade la clase active si se abre
+        serviciosContent.scrollIntoView({ behavior: "smooth" }); // Desplazarse a la sección
     }
 });
 
-// Define the updateContent function
+// Definir la función updateContent
 function updateContent(title, text) {
     const contentMenu = document.getElementById('content-menu');
     if (contentMenu) {
         contentMenu.innerHTML = `<h2>${title}</h2><p>${text}</p>`;
-        contentMenu.scrollIntoView({ behavior: "smooth" }); // Scroll to the updated content
+        contentMenu.scrollIntoView({ behavior: "smooth" }); // Desplazarse al contenido actualizado
     }
 }
 
-// Code to add event listeners to the menu items
+// Código que agrega los listeners a los elementos del menú
 document.querySelectorAll('.menu-content-item').forEach(item => {
     item.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevents the link from reloading the page
-        // Remove the 'active' class from all elements
+        event.preventDefault(); // Evita que el enlace recargue la página
+        // Elimina la clase 'active' de todos los elementos
         document.querySelectorAll('.menu-content-item').forEach(el => el.classList.remove('active'));
-        // Add the 'active' class to the current element
+        // Añade la clase 'active' al elemento actual
         this.classList.add('active');
     });
 });
 
-// Event listeners for the main menu items
-document.getElementById('audits').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevents the link from reloading the page
-    updateContent('Audits', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we use the most advanced auditing techniques at an international level that require planning and coordination of all resources involved.<br><br>With these techniques, we ensure that the result of each audit is more efficient and cost-effective, developing work plans for each client, considering their market segment and geographical location. 
+
+// Escucha los clics en los enlaces del menú
+document.getElementById('auditorias').addEventListener('click', function (event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    updateContent('Auditorías', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> utilizamos las técnicas más avanzadas de
+        auditoría a nivel internacional que requieren una planificación y una coordinación de todos
+        los recursos que interviene en ella.<br><br>Con estas técnicas logramos que el resultado de cada auditoría sea más eficiente y
+        económica, desarrollando planes de trabajo para cada cliente en particular, considerando su
+        segmento de mercado y ubicación geográfica. 
         <ul class="audit-list">
-       <li><strong><a href="audits.html?scroll=financial-statements">Financial Statement Audit</a></strong></li>
-        <li><strong><a href="audits.html?scroll=special">Special Audits</a></strong></li>
-        <li><strong><a href="audits.html?scroll=internal">Internal Audit</a></strong></li>
-        <li><strong><a href="audits.html?scroll=forensic">Forensic Audit</a></strong></li>
+       <li><strong><a href="auditorias.html?scroll=estados-financieros">Auditoría de estados financieros</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=especiales">Auditorias especiales</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=interna">Auditoría Interna</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=interna">Auditoría forence</a></strong></li>
         </ul>`);
 });
 
 document.getElementById('outsourcing').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevents the link from reloading the page
-    updateContent('Outsourcing', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we aim to meet the information and control needs of companies that do not have the structure to carry out these activities.<br><br>The outsourcing services we provide to companies include:
+    event.preventDefault(); // Evita que el enlace recargue la página
+    updateContent('Outsourcing', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> buscamos satisfacer las necesidades de
+información y control que tienen aquellas Empresas que no cuentan con una estructura que
+les permita desarrollar dichas actividades.<br><br>El outsourcing que brindamos a las Empresas comprende:
         <ul class="audit-list">
-        <li>Processing company information and issuing required financial reports.</li> 
-        <li>Internal audits through compliance reviews according to a designed work plan.</li>
-        <li><strong><a href="outsourcing.html?scroll=internal">Accounting Outsourcing</a></strong></li>
-        <li><strong><a href="outsourcing.html?scroll=internal1">Internal Audit Outsourcing</a></strong></li>
+        <li>El procesamiento de la información de la empresa y la emisión de información financiera requerida.</li> 
+        <li>Auditorías internas mediante el cumplimiento de revisiones de acuerdo a un plan de trabajo diseñado a tal efecto.</li>
+        <li><strong><a href="outsourcing.html?scroll=interna">Outsourcing Contable</a></strong></li>
+        <li><strong><a href="outsourcing.html?scroll=interna1">Outsourcing de Auditoría Interna</a></strong></li>
         </ul>`);
 });
 
-document.getElementById('tax-advisory').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevents the link from reloading the page
-    updateContent('Tax Advisory', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we recognize that one of the main current needs of companies is the correct determination of the tax burden by the National Tax Service (SIN), both at the corporate and individual level. <br><br>
-    Our expert tax professionals understand the fiscal consequences of each decision; they work closely with our clients to ensure that no opportunity to economize on taxes is missed by utilizing all available fiscal tools.<br><br>
-    We keep our clients constantly informed about changes in laws, decrees, and regulatory standards.<br><br>
+document.getElementById('asesoramiento-tributario').addEventListener('click', function (event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    updateContent('Asesoramiento Tributario', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> reconocemos como una de las principales
+    necesidades actuales de las empresas es la correcta determinación de la carga tributaria por
+    el Servicio de Impuestos Nacionales SIN, tanto a nivel empresarial como individual. <br><br>
+    Nuestros profesionales expertos en tributación, comprenden las consecuencias fiscales
+    implícitas en cada decisión; para lo cual trabajan en forma conjunta con nuestros clientes
+    para asegurar que no se pierda ninguna oportunidad de economizar en el pago de impuestos
+    mediante el uso de todas las herramientas fiscales disponibles.<br><br>
+    Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y
+    decretos supremos y normas reglamentarias.<br><br>
     <ul class="audit-list">
-    <li><strong><a href="tax.html?scroll=internal">Our Professional Services</a></strong></li>
+    <li><strong><a href="tributario.html?scroll=interna">Nuestros Servicios Profesionales</a></strong></li>
     </ul>
 `);
 });
 
-document.getElementById('consulting').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevents the link from reloading the page
-    updateContent('Consulting', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we expand our services to provide comprehensive advice to institutions, offering the following consulting services.<br><br>
-    Our consultants, experts in technical revaluations, inventories, manual preparation, etc., understand the needs of our clients and are committed to providing efficient and cost-effective services.<br><br>
-    <strong>Our Professional Services:</strong><ul class="audit-list">
-    <li>Mid-term, Final, and Post Project Technical Evaluations.</li>
-    <li>Fundraising for non-profit entities.</li>
-    <li>Experience systematization.</li>
-    <li>Project baseline development.</li>    
-    <li>Technical Revaluation of Fixed Assets.</li>
-    <li>Inventories.</li>
-    <li>Preparation and implementation of administrative, accounting, and cost systems.</li></ul>
+
+document.getElementById('consultorias').addEventListener('click', function (event) {
+    event.preventDefault(); // Evita que el enlace recargue la página
+    updateContent('Consultoría', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> ampliamos nuestros servicios para brindar un
+    asesoramiento integral a las instituciones, por lo que ofrecemos los siguientes servicios de
+    consultoría.<br><br>
+    Nuestros consultores expertos en revaluos técnicos, inventarios, elaboración de manuales,
+etc. Comprenden la necesidad de nuestros clientes y se encuentran comprometidos en
+brindar un servicio eficiente y económico.<br><br>
+    <strong>Nuestros Servicios Profesionales:</strong><ul class="audit-list">
+    <li>Evaluaciones Técnicas de Medio Término, Finales y Post a Proyectos.</li>
+    <li>Fundraising para entidades sin fines de lucro.</li>
+    <li>Sistematización de experiencias.</li>
+    <li>Líneas base de proyectos.</li>    
+    <li>Revaluó Técnico de Activos Fijos.</li>
+    <li>Inventarios.</li>
+    <li>Elaboración e implementación de sistemas administrativos contables y de costos.</li></ul>
 `);
 });
 
-// Toggle visibility of the "Industries" section
-document.getElementById("industries-btn").addEventListener("click", function (event) {
+// Toggle visibility of the "Industrias" section
+document.getElementById("industrias-btn").addEventListener("click", function (event) {
     event.preventDefault();
-    var industriesContent = document.getElementById("industries-content");
-    var servicesContent = document.getElementById("services-content");
+    var industriasContent = document.getElementById("industrias-content");
+    var serviciosContent = document.getElementById("servicios-content");
 
-    // Close the Services section if it's open
-    servicesContent.style.display = "none";
+    // Cerrar la sección Servicios si está abierta
+    serviciosContent.style.display = "none";
 
-    // Remove 'active' class from all menu buttons
+    // Eliminar la clase 'active' de todos los botones del menú
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
 
-    // Toggle the Industries section
-    if (industriesContent.style.display === "flex") {
-        industriesContent.style.display = "none";
+    // Alternar la sección Industrias
+    if (industriasContent.style.display === "flex") {
+        industriasContent.style.display = "none";
     } else {
-        industriesContent.style.display = "flex";
-        this.classList.add('active'); // Add the active class if it's opened
-        industriesContent.scrollIntoView({ behavior: "smooth" }); // Scroll to the section
+        industriasContent.style.display = "flex";
+        this.classList.add('active'); // Añade la clase active si se abre
+        industriasContent.scrollIntoView({ behavior: "smooth" }); // Desplazarse a la sección
     }
 });
 
-// Update content dynamically for Industries
+// Update content dynamically for Industrias
 function updateIndustriesContent(title, text) {
     const contentMenu = document.getElementById('content-menu-industries');
     if (contentMenu) {
         contentMenu.innerHTML = `<h2>${title}</h2><p>${text}</p>`;
-        contentMenu.scrollIntoView({ behavior: "smooth" }); // Scroll to the updated content
+        contentMenu.scrollIntoView({ behavior: "smooth" }); // Desplazarse al contenido actualizado
     }
 }
 
 // Add event listeners for industries menu items
-document.getElementById('commercial').addEventListener('click', function (event) {
+document.getElementById('comercial').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Commercial', 'Arnez Miranda & Asociados provides integrated solutions for the commercial sector, improving profitability and efficiency.');
+    updateIndustriesContent('Comercial', 'Arnez Miranda & Asociados brinda soluciones integrales para el sector comercial, mejorando la rentabilidad y eficiencia.');
 });
 
-document.getElementById('services').addEventListener('click', function (event) {
+document.getElementById('servicios').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Services', 'Our firm understands the need for continuous and resilient improvement in the sale of services.');
+    updateIndustriesContent('Servicios', 'Nuestra firma entiende la necesidad de mejora continua y resiliente en la venta de servicios.');
 });
 
-document.getElementById('manufacturing-industry').addEventListener('click', function (event) {
+document.getElementById('industria-manufacturera').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Industry', 'The industry in today\'s globalized world requires constant advice to improve its processes. We are ready to support this continuous improvement.');
+    updateIndustriesContent('Industria', 'La industria en el actual mundo globalizado requiere asesoría constante para la mejora de sus procesos. Estamos dispuestos a acompañar esta mejora continua.');
 });
 
-document.getElementById('construction').addEventListener('click', function (event) {
+document.getElementById('construccion').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Construction', 'Our experience in the construction industry allows us to offer specialized audit and advisory services for building projects.');
+    updateIndustriesContent('Construcción', 'Nuestra experiencia en la industria de la construcción nos permite ofrecer auditoría y asesoramiento especializado en proyectos de edificación.');
 });
 
-document.getElementById('non-profit-entities').addEventListener('click', function (event) {
+document.getElementById('entidades-sin-fines-lucro').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Non-profit Entities', 'We bring all our experience working with international cooperation to ensure the successful completion of projects executed by these institutions.');
+    updateIndustriesContent('Entidades sin fines de lucro', 'Brindamos toda nuestra experiencia de trabajo con la cooperación internacional para el cumplimiento exitoso de los proyectos ejecutados por estas instituciones.');
 });
 
-document.getElementById('cooperatives').addEventListener('click', function (event) {
+document.getElementById('cooperativas').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Cooperatives', 'The corporate sector faces challenging objectives in the current context, and our firm, as business advisors, offers the necessary tools for the successful achievement of these objectives.');
+    updateIndustriesContent('Cooperativas', 'El sector corporativo enfrenta objetivos desafiantes ante la coyuntura actual y nuestra firma como asesores de negocios ofrece las herramientas necesarias para el cumplimiento exitoso de estos objetivos.');
 });
 
-document.getElementById('public-sector').addEventListener('click', function (event) {
+document.getElementById('sector-publico').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Public Sector', 'State institutions face long-term challenges and require multidisciplinary teams.');
+    updateIndustriesContent('Sector público', 'Las instituciones estatales presentan desafíos a largo plazo, por lo que demandan equipos multidisciplinarios.');
 });
 
-document.getElementById('unclassified').addEventListener('click', function (event) {
+document.getElementById('no-clasificados').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Unclassified', 'This sector has unique characteristics, requiring tailored solutions to its challenges.');
+    updateIndustriesContent('No Clasificados', 'Este sector tiene características peculiares, por lo que requiere soluciones a medida de sus desafíos.');
 });
 
-// Function to smooth scroll and highlight the active button
+
+// Función para hacer scroll suave y marcar el botón activo
 function scrollToSection(sectionId, buttonId) {
-    // Smooth scroll to the section
+    // Desplazar suavemente a la sección
     document.getElementById(sectionId).scrollIntoView({
         behavior: 'smooth'
     });
 
-    // Remove the active class from all menu buttons
+    // Eliminar la clase active de todos los botones del menú
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
 
-    // Add the active class to the current button
+    // Añadir la clase active al botón actual
     document.getElementById(buttonId).classList.add('active');
 }
 
-// Listeners for menu buttons
-document.getElementById('services-btn').addEventListener('click', function () {
-    closeMenuAndScrollTo('services-content', 'services-btn');
+// Listeners para los botones del menú
+document.getElementById('servicios-btn').addEventListener('click', function () {
+    closeMenuAndScrollTo2('servicios-content', 'servicios-btn');
 });
 
-document.getElementById('industries-btn').addEventListener('click', function () {
-    closeMenuAndScrollTo('industries-content', 'industries-btn');
+document.getElementById('industrias-btn').addEventListener('click', function () {
+    closeMenuAndScrollTo2('industrias-content', 'industrias-btn');
 });
 
 document.getElementById('contactanos-btn').addEventListener('click', function () {
