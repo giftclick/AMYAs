@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault();
                 targetSection.scrollIntoView({ behavior: "smooth" });
             } else {
-                window.location.href = "quienessomos.html?scroll=quienes-somos-section";
+                window.location.href = "aboutus.html?scroll=quienes-somos-section";
             }
         });
     }
