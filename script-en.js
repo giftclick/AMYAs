@@ -67,7 +67,7 @@ document.querySelectorAll('.menu-content-item').forEach(item => {
 // Listen for clicks on the menu links
 document.getElementById('auditorias').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the link from reloading the page
-    updateContent('Auditorías', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we use the most advanced international auditing techniques that require planning and coordination of all the resources involved.<br><br>With these techniques, we ensure that the result of each audit is more efficient and cost-effective, developing work plans for each client, considering their market segment and geographic location.
+    updateContent('Audits', `At <strong>ARNEZ MIRANDA AND ASSOCIATES</strong>, we use the most advanced international auditing techniques that require planning and coordination of all the resources involved.<br><br>With these techniques, we ensure that the result of each audit is more efficient and cost-effective, developing work plans for each client, considering their market segment and geographic location.
         <ul class="audit-list">
        <li><strong><a href="auditorias.html?scroll=estados-financieros">Financial Statement Audit</a></strong></li>
         <li><strong><a href="auditorias.html?scroll=especiales">Special Audits</a></strong></li>
@@ -78,7 +78,7 @@ document.getElementById('auditorias').addEventListener('click', function (event)
 
 document.getElementById('outsourcing').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the link from reloading the page
-    updateContent('Outsourcing', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we aim to meet the information and control needs of companies that do not have the structure to carry out these activities.<br><br>The outsourcing we provide to companies includes:
+    updateContent('Outsourcing', `At <strong>ARNEZ MIRANDA AND ASSOCIATES</strong>, we aim to meet the information and control needs of companies that do not have the structure to carry out these activities.<br><br>The outsourcing we provide to companies includes:
         <ul class="audit-list">
         <li>Processing company information and issuing required financial reports.</li> 
         <li>Internal audits through compliance reviews according to a work plan designed for that purpose.</li>
@@ -89,7 +89,7 @@ document.getElementById('outsourcing').addEventListener('click', function (event
 
 document.getElementById('asesoramiento-tributario').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the link from reloading the page
-    updateContent('Asesoramiento Tributario', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we recognize that one of the main current needs of companies is the correct determination of tax liabilities by the National Tax Service (SIN), both at the corporate and individual levels. <br><br>
+    updateContent('Tax Advisory', `At <strong>ARNEZ MIRANDA AND ASSOCIATES</strong>, we recognize that one of the main current needs of companies is the correct determination of tax liabilities by the National Tax Service (SIN), both at the corporate and individual levels. <br><br>
     Our tax experts understand the fiscal consequences of each decision and work closely with our clients to ensure that no opportunity to save on taxes is missed through the use of all available tax tools.<br><br>
     We keep our clients continuously informed about changes in laws, supreme decrees, and regulatory standards.<br><br>
     <ul class="audit-list">
@@ -100,7 +100,7 @@ document.getElementById('asesoramiento-tributario').addEventListener('click', fu
 
 document.getElementById('consultorias').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the link from reloading the page
-    updateContent('Consultoría', `At <strong>ARNEZ MIRANDA Y ASOCIADOS</strong>, we expand our services to provide comprehensive consulting to institutions, offering the following consulting services.<br><br>
+    updateContent('Consulting', `At <strong>ARNEZ MIRANDA AND ASSOCIATES</strong>, we expand our services to provide comprehensive consulting to institutions, offering the following consulting services.<br><br>
     Our consultants, experts in technical appraisals, inventories, manual preparation, etc., understand our clients' needs and are committed to providing efficient and cost-effective services.<br><br>
     <strong>Our Professional Services:</strong><ul class="audit-list">
     <li>Mid-term, Final, and Post-Project Technical Evaluations.</li>
@@ -147,42 +147,42 @@ function updateIndustriesContent(title, text) {
 // Agregar oyentes de eventos para los elementos del menú de industrias
 document.getElementById('comercial').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Comercial', 'Arnez Miranda & Asociados provides comprehensive solutions for the commercial sector, improving profitability and efficiency.');
+    updateIndustriesContent('Commercial', 'ARNEZ MIRANDA AND ASSOCIATES provides comprehensive solutions for the commercial sector, improving profitability and efficiency.');
 });
 
 document.getElementById('servicios').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Servicios', 'Our firm understands the need for continuous and resilient improvement in service sales.');
+    updateIndustriesContent('Services', 'Our firm understands the need for continuous and resilient improvement in service sales.');
 });
 
 document.getElementById('industria-manufacturera').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Industria', 'The industry in today’s globalized world requires constant advice to improve its processes. We are ready to support this continuous improvement.');
+    updateIndustriesContent('Industry', 'The industry in today’s globalized world requires constant advice to improve its processes. We are ready to support this continuous improvement.');
 });
 
 document.getElementById('construccion').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Construcción', 'Our experience in the construction industry allows us to offer specialized auditing and consulting services for building projects.');
+    updateIndustriesContent('Construction', 'Our experience in the construction industry allows us to offer specialized auditing and consulting services for building projects.');
 });
 
 document.getElementById('entidades-sin-fines-lucro').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Entidades sin fines de lucro', 'We offer all our experience working with international cooperation to successfully implement projects executed by these institutions.');
+    updateIndustriesContent('Non-profit Entities', 'We offer all our experience working with international cooperation to successfully implement projects executed by these institutions.');
 });
 
 document.getElementById('cooperativas').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Cooperativas', 'The corporate sector faces challenging goals in the current context, and our firm as business advisors offers the necessary tools to successfully achieve these objectives.');
+    updateIndustriesContent('Cooperatives', 'The corporate sector faces challenging goals in the current context, and our firm as business advisors offers the necessary tools to successfully achieve these objectives.');
 });
 
 document.getElementById('sector-publico').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('Sector público', 'State institutions face long-term challenges, requiring multidisciplinary teams.');
+    updateIndustriesContent('Public Sector', 'State institutions face long-term challenges, requiring multidisciplinary teams.');
 });
 
 document.getElementById('no-clasificados').addEventListener('click', function (event) {
     event.preventDefault();
-    updateIndustriesContent('No Clasificados', 'This sector has unique characteristics, so it requires tailored solutions to its challenges.');
+    updateIndustriesContent('Unclassified', 'This sector has unique characteristics, so it requires tailored solutions to its challenges.');
 });
 
 
