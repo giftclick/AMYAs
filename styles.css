@@ -448,6 +448,10 @@ p {
     /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
   }
 
+  .text-box-who {
+    padding: 10px !important;
+  }
+
   .navbar.scrolled .nav-links {
     transform: translateX(0%);
   }
