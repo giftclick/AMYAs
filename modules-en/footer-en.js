@@ -42,13 +42,13 @@ export class Footer extends HTMLElement {
         </div>
         <div class="footer-nav">
             <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="industries.html">Industries</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                 <li><a href="#" id="servicios-btn">Services</a></li>
+                <li><a href="#" id="industrias-btn">Industries</a></li>
+                <li><a href="?scroll=contactanos-section">Contact Us</a></li>
             </ul>
             <ul>
                 <li><a href="aboutus.html">About AM</a></li>
-                <li><a href="joinus.html">Join AM</a></li>
+                <li><a href="joinAM.html">Join AM</a></li>
             </ul>
         </div>
     </footer>
