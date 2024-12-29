@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Arnez Miranda and Associates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <script type="module" src="./modules-en/navbar-en.js"></script>
+    <script type="module" src="./modules-en/footer-en.js"></script>
+    <script type="module" src="./modules-en/contact-en.js"></script>
+    <script type="module" src="./modules-en/articles-en.js"></script>
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+    <section class="contact-form-section">
+        <h1 class="contact-title">Contact Us</h1>
+        <h2 class="contact-subtitle">On WhatsApp</h2>
+        <h6>Make sure WhatsApp Web is open in your browser.</h6>
+        <br>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Olimpo S.R.L.">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="olimpo@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Enter your query"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </section>
+    <section class="contact-form-section">
+        <h1 class="contact-title">Contact Us</h1>
+        <h2 class="contact-subtitle">By Email</h2>
+        <h4>Leave us a message at this email and we will respond as soon as possible.</h4><br>
+        <a href="mailto:sgonzales@arnezmiranda.com.bo" class="contact-link">sgonzales@arnezmiranda.com.bo</a>
+    </section>
+    
+    <app-articles></app-articles>
+    <app-footer></app-footer>
+    <script src="script-en.js" defer></script>
+    <script src="contact-en.js" defer></script>
+</body>
+
+</html>

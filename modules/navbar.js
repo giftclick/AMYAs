@@ -52,7 +52,7 @@ export class Navbar extends HTMLElement {
                 tributario y consultoría
                 integral para empresas en diversos sectores, optimizando eficiencia y cumplimiento con servicios
                 personalizados y especializados.</p>
-            <button class="contact-btn">Contáctanos</button>
+            <button class="contact-btn" onclick="window.location.href='contacto.html'">Contáctanos</button>
         </div>
 
         <div class="menu">
@@ -133,7 +133,7 @@ export class Navbar extends HTMLElement {
             <p><strong>ARNEZ MIRANDA Y ASOCIADOS</strong> presta sus servicios especializados a una amplia gama de
                 industrias, ofreciendo
                 soluciones personalizadas que se ajustan a las necesidades únicas de cada sector.</p>
-            <button class="contact-btn">Contáctanos</button>
+            <button class="contact-btn" onclick="window.location.href='contacto.html'">Contáctanos</button>
         </div>
 
         <div class="menu">

@@ -567,3 +567,85 @@ footer {
     background-color: #758D70;
     color: #fff;
 }
+
+.contact-form-section {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.contact-title {
+    font-size: 28px;
+    color: #1a202c;
+    /* Color oscuro para el título */
+    margin-bottom: 5px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #2f855a;
+    /* Color verde para el subtítulo */
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #718096;
+    /* Gris claro */
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #e2e8f0;
+    /* Borde claro */
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2f855a;
+    /* Borde verde al enfoque */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #71896e;
+    /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5a7259;
+    /* Verde más oscuro */
+}
