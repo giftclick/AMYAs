@@ -102,6 +102,7 @@
         <h1 class="contact-title">Contáctanos</h1>
         <h2 class="contact-subtitle">En Whatsapp</h2>
         <h6>Asegúrate de que WhatsApp Web esté abierto en tu navegador.</h6>
+        <br>
         <form class="contact-form">
             <div class="form-group">
                 <label for="name">Nombre y apellido</label>
@@ -126,42 +127,43 @@
     <section class="contact-form-section">
         <h1 class="contact-title">Contáctanos</h1>
         <h2 class="contact-subtitle">Por Correo Electrónico</h2>
-        <h6>Déjanos un mensaje a este correo y te responderemos lo antes posible.</h6>
+        <h4>Déjanos un mensaje a este correo y te responderemos lo antes posible.</h4><br>
         <a href="mailto:sgonzales@arnezmiranda.com.bo" class="contact-link">sgonzales@arnezmiranda.com.bo</a>
         </div>
     </section>
-    document.querySelector('.contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita que el formulario se envíe
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evita que el formulario se envíe
 
-    // Obtener los valores de los campos del formulario
-    const name = document.getElementById('name').value.trim();
-    const company = document.getElementById('company').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+            // Obtener los valores de los campos del formulario
+            const name = document.getElementById('name').value.trim();
+            const company = document.getElementById('company').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
 
-    // Validar que los campos requeridos no estén vacíos
-    if (!name || !email || !message) {
-    alert('Por favor, complete todos los campos requeridos.');
-    return;
-    }
+            // Validar que los campos requeridos no estén vacíos
+            if (!name || !email || !message) {
+                alert('Por favor, complete todos los campos requeridos.');
+                return;
+            }
 
-    // Crear el mensaje profesional
-    const professionalMessage = `Hola, mi nombre es ${name}. Represento a la empresa ${company || 'N/A'}, mi correo es
-    ${email} y esta es mi consulta: ${message}`;
+            // Crear el mensaje profesional
+            const professionalMessage = `Hola, mi nombre es ${name}. Represento a la empresa ${company || 'N/A'}, mi correo es
+            ${email} y esta es mi consulta: ${message}`;
 
-    // Número de WhatsApp al que se enviará el mensaje
-    const whatsappNumber = '+59165350004';
+            // Número de WhatsApp al que se enviará el mensaje
+            const whatsappNumber = '+59165350004';
 
-    // Crear el enlace de WhatsApp con el número y el mensaje
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(professionalMessage)}`;
+            // Crear el enlace de WhatsApp con el número y el mensaje
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(professionalMessage)}`;
 
-    // Abrir WhatsApp en una nueva ventana
-    window.open(whatsappUrl, '_blank');
-    });
+            // Abrir WhatsApp en una nueva ventana
+            window.open(whatsappUrl, '_blank');
+        });
     </script>
     <app-articles></app-articles>
     <app-footer></app-footer>
-    <script src="script-en.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
