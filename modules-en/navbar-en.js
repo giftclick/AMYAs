@@ -47,7 +47,7 @@ export class Navbar extends HTMLElement {
     <!-- Contenido que colapsa -->
     <div id="servicios-content" class="collapsible-content">
         <div class="services">
-            <h2>Servicios</h2>
+            <h2>services</h2>
             <p><strong>ARNEZ MIRANDA AND ASSOCIATES</strong>  offers auditing, accounting outsourcing, tax advisory, and
                 consulting services for companies in various sectors, optimizing efficiency and compliance with
                 personalized and specialized services.</p>
@@ -128,7 +128,7 @@ export class Navbar extends HTMLElement {
     </div>
     <div id="industrias-content" class="collapsible-content" style="display: none;">
         <div class="industries">
-            <h2>Industrias</h2>
+            <h2>industries</h2>
             <p><strong>ARNEZ MIRANDA AND ASSOCIATES</strong> provides specialized services to a wide range of industries,
                 offering
                 customized solutions tailored to the unique needs of each sector.</p>
