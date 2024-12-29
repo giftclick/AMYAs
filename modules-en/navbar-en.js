@@ -51,7 +51,7 @@ export class Navbar extends HTMLElement {
             <p><strong>ARNEZ MIRANDA AND ASSOCIATES</strong>  offers auditing, accounting outsourcing, tax advisory, and
                 consulting services for companies in various sectors, optimizing efficiency and compliance with
                 personalized and specialized services.</p>
-            <button class="contact-btn" onclick="window.location.href='contacto.html'">Contact Us</button>
+            <button class="contact-btn" onclick="window.location.href='contacto-en.html'">Contact Us</button>
         </div>
 
         <div class="menu">
@@ -132,7 +132,7 @@ export class Navbar extends HTMLElement {
             <p><strong>ARNEZ MIRANDA AND ASSOCIATES</strong> provides specialized services to a wide range of industries,
                 offering
                 customized solutions tailored to the unique needs of each sector.</p>
-            <button class="contact-btn" onclick="window.location.href='contacto.html'">Contact Us</button>
+            <button class="contact-btn" onclick="window.location.href='contacto-en.html'">Contact Us</button>
         </div>
 
         <div class="menu">
