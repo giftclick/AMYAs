@@ -43,13 +43,13 @@ export class Footer extends HTMLElement {
         </div>
         <div class="footer-nav">
             <ul>
-                <li><a href="#servicios" id="servicios-btn">Servicios</a></li>
-                <li><a href="#industrias" id="industrias-btn">Industrias</a></li>
-                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><button id="servicios-btn" class="nav-btn">Servicios</button></li>
+                <li><button id="industrias-btn" class="nav-btn">Industrias</button></li>
+                <li><button id="contactanos-btn" class="nav-btn">Contáctanos</button></li>
             </ul>
             <ul>
-                <li><a href="quienessomos.html">Acerca de AM</a></li>
-                <li><a href="separte.html">Se Parte de AM</a></li>
+                <li><button id="quienes-somos-btn" class="nav-btn">Acerca de AM</button></li>
+                <li><button id="se-parte-btn" class="nav-btn">Se Parte de AM</button></li>
             </ul>
         </div>
     </footer>
