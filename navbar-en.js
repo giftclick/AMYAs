@@ -4,7 +4,7 @@ export class Navbar extends HTMLElement {
         const template = document.createElement('template');
         template.innerHTML = `
         <nav class="navbar">
-        <a href="index.html">
+        <a href="index-en.html">
             <div class="logo">
                 <img src="./assets/Group 2.svg" alt="Arnez Miranda & Asociados Logo">
             </div>

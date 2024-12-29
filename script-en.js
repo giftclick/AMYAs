@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault();
                 targetSection.scrollIntoView({ behavior: "smooth" });
             } else {
-                window.location.href = "separte.html?scroll=se-parte-section";
+                window.location.href = "joinAM.html?scroll=se-parte-section";
             }
         });
     }
