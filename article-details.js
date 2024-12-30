@@ -63,7 +63,7 @@ export class ArticleDetail extends HTMLElement {
             origami: {
                 title: "Cómo reconstruir un negocio con agilidad y crear resiliencia",
                 content: "El liderazgo decisivo, la capacidad de respuesta basada en datos y la capacidad de remodelar rápidamente son la clave...",
-                image: "/assets/origami.jpg",
+                image: "./assets/origami.jpg",
                 date: "8 jul 2019",
             },
         };
