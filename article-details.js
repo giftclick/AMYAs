@@ -2,11 +2,9 @@ export class ArticleDetail extends HTMLElement {
     constructor() {
         super();
 
-        // Obtener el ID del artículo desde la URL
         const params = new URLSearchParams(window.location.search);
         const articleId = params.get("id");
 
-        // Definición de artículos (puedes expandir esto según necesites)
         const articles = {
             origami: {
                 title: "Cómo reconstruir un negocio con agilidad y crear resiliencia",
@@ -28,14 +26,10 @@ export class ArticleDetail extends HTMLElement {
             },
         };
 
-        // Obtener el artículo correspondiente
         const article = articles[articleId];
-
-        // Crear un contenedor dinámico para el artículo
         const template = document.createElement("template");
 
         if (article) {
-            // Si el artículo existe, mostrar su contenido
             template.innerHTML = `
                 <div class="article">
                     <img src="${article.image}" alt="${article.title}">
@@ -45,21 +39,28 @@ export class ArticleDetail extends HTMLElement {
                 </div>
             `;
         } else {
-            // Si no existe, mostrar un mensaje de error
             template.innerHTML = `<h1>Artículo no encontrado</h1>`;
         }
 
-        // Agregar el contenido dinámico al DOM
         this.appendChild(template.content.cloneNode(true));
     }
 }
 
-// Definir el componente personalizado
-customElements.define('app-article-detail', ArticleDetail);
-
-// Montar el componente dinámico en el contenedor
-const articleContent = document.getElementById("article-content");
-if (articleContent) {
-    const detailComponent = document.createElement("app-article-detail");
-    articleContent.appendChild(detailComponent);
+// Verificar el registro
+if (!customElements.get('app-article-detail')) {
+    customElements.define('app-article-detail', ArticleDetail);
+    console.log("Componente app-article-detail registrado correctamente.");
 }
+
+// Agregar al DOM cuando esté listo
+document.addEventListener("DOMContentLoaded", () => {
+    const articleContent = document.getElementById("article-content");
+    if (articleContent) {
+        try {
+            const detailComponent = document.createElement("app-article-detail");
+            articleContent.appendChild(detailComponent);
+        } catch (error) {
+            console.error("Error al crear app-article-detail:", error);
+        }
+    }
+});
