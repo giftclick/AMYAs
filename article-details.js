@@ -62,11 +62,24 @@ export class ArticleDetail extends HTMLElement {
         const articles = {
             origami: {
                 title: "Cómo reconstruir un negocio con agilidad y crear resiliencia",
-                content: "El liderazgo decisivo, la capacidad de respuesta basada en datos y la capacidad de remodelar rápidamente son la clave...",
+                content: "En un entorno empresarial en constante cambio, la capacidad de adaptación se ha convertido en un pilar fundamental para la supervivencia y el éxito. Reconstruir un negocio con agilidad implica desarrollar estrategias que permitan responder rápidamente a los desafíos del mercado y a las necesidades cambiantes de los clientes. Esto requiere liderazgo decisivo, donde los líderes sean capaces de tomar decisiones informadas y oportunas basadas en datos confiables. La capacidad de respuesta basada en datos permite identificar patrones, anticipar tendencias y minimizar riesgos. Además, la capacidad de remodelar rápidamente procesos, productos y modelos de negocio asegura que la organización no solo sobreviva, sino que prospere en tiempos de incertidumbre. La resiliencia empresarial no es un destino, sino un proceso continuo que se construye a través de la innovación, la colaboración y el aprendizaje constante.",
                 image: "./assets/origami.jpg",
                 date: "8 jul 2019",
             },
+            robot: {
+                title: "Is your portfolio fit for the future or fashioned only on the past?",
+                content: "In an era defined by rapid technological advancements and shifting market dynamics, the composition of your investment portfolio speaks volumes about your readiness for the future. A forward-looking portfolio is one that embraces innovation, integrates sustainable practices, and remains agile in the face of disruption. Relying solely on past performance is no longer sufficient; instead, investors must evaluate emerging trends such as artificial intelligence, renewable energy, and digital transformation. Sustainability is not just a buzzword but a necessity for long-term growth, as businesses and markets increasingly prioritize environmental, social, and governance (ESG) criteria. Diversification across industries and geographies further mitigates risk and enhances resilience. The question remains: Is your portfolio a relic of the past, or is it strategically positioned to thrive in the future? The answer lies in your willingness to innovate, adapt, and invest in a vision that aligns with the evolving global landscape.",
+                image: "./assets/robot.jpg",
+                date: "8 jul 2019",
+            },
+            negocio: {
+                title: "El futuro de los negocios: Innovación y sostenibilidad",
+                content: "El mundo empresarial enfrenta un punto de inflexión donde la innovación y la sostenibilidad no son opcionales, sino imprescindibles. La tecnología juega un papel crucial en esta transformación, permitiendo a las empresas automatizar procesos, mejorar la eficiencia y ofrecer experiencias personalizadas a los clientes. Sin embargo, la innovación no debe ser a expensas del medio ambiente o la sociedad. La sostenibilidad es un principio que debe integrarse en cada nivel de la operación empresarial, desde la cadena de suministro hasta la estrategia corporativa. Empresas que priorizan la responsabilidad social y ambiental no solo cumplen con las expectativas regulatorias, sino que también ganan la lealtad de los consumidores y atraen talento comprometido con valores compartidos. En este contexto, la resiliencia también es clave, ya que las organizaciones deben estar preparadas para adaptarse rápidamente a las disrupciones y mantener su competitividad. El futuro de los negocios pertenece a aquellos que pueden equilibrar la innovación con la sostenibilidad, asegurando un impacto positivo tanto a corto como a largo plazo.",
+                image: "./assets/negocio.jpg",
+                date: "8 jul 2019",
+            },
         };
+
 
         // Buscar el artículo correspondiente
         const article = articles[articleId];
