@@ -97,10 +97,10 @@ document.getElementById('asesoramiento-tributario').addEventListener('click', fu
     event.preventDefault(); // Evita que el enlace recargue la página
     updateContent('Asesoramiento Tributario', `En <strong>ARNEZ MIRANDA Y ASOCIADOS</strong> reconocemos como una de las principales
     necesidades actuales de las empresas es la correcta determinación de la carga tributaria por
-    el Servicio de Impuestos Nacionales SIN, tanto a nivel empresarial como individual. <br><br>
+    el Servicio de Impuestos Nacionales SIN. <br><br>
     Nuestros profesionales expertos en tributación, comprenden las consecuencias fiscales
     implícitas en cada decisión; para lo cual trabajan en forma conjunta con nuestros clientes
-    para asegurar que no se pierda ninguna oportunidad de economizar en el pago de impuestos
+    para asegurar que no se pierda ninguna oportunidad de optimizar en el pago de impuestos
     mediante el uso de todas las herramientas fiscales disponibles.<br><br>
     Mantenemos permanentemente informados a nuestros clientes sobre los cambios en leyes y
     decretos supremos y normas reglamentarias.<br><br>
