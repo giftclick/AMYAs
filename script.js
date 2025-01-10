@@ -76,7 +76,9 @@ document.getElementById('auditorias').addEventListener('click', function (event)
        <li><strong><a href="auditorias.html?scroll=estados-financieros">Auditoría de estados financieros</a></strong></li>
         <li><strong><a href="auditorias.html?scroll=especiales">Auditorias especiales</a></strong></li>
         <li><strong><a href="auditorias.html?scroll=interna">Auditoría Interna</a></strong></li>
-        <li><strong><a href="auditorias.html?scroll=interna">Auditoría forence</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=forense">Auditoría forence</a></strong></li>
+        <li><strong><a href="auditorias.html?scroll=seguridad"Auditoría de Seguridad de la Información</a></strong></li>
+         <li><strong><a href="auditorias.html?scroll=normativo"Auditoría de Cumplimiento Normativo</a></strong></li>
         </ul>`);
 });
 
