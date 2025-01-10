@@ -120,13 +120,13 @@ document.getElementById('consultorias').addEventListener('click', function (even
 etc. Comprenden la necesidad de nuestros clientes y se encuentran comprometidos en
 brindar un servicio eficiente y económico.<br><br>
     <strong>Nuestros Servicios Profesionales:</strong><ul class="audit-list">
-    <li>Evaluaciones Técnicas de Medio Término, Finales y Post a Proyectos.</li>
-    <li>Fundraising para entidades sin fines de lucro.</li>
-    <li>Sistematización de experiencias.</li>
-    <li>Líneas base de proyectos.</li>    
-    <li>Revaluó Técnico de Activos Fijos.</li>
-    <li>Inventarios.</li>
-    <li>Elaboración e implementación de sistemas administrativos contables y de costos.</li></ul>
+    <li><strong><a href="consultoria.html?scroll=evaluaciones">Evaluaciones Técnicas de Medio Término, Finales y Post a Proyectos.</a></strong></li>
+    <li><strong><a href="consultoria.html?scroll=fundraising">Fundraising para entidades sin fines de lucro.</a></strong></li>
+    <li><strong><a href="consultoria.html?scroll=exp">Sistematización de experiencias.</a></strong></li>
+    <li><strong><a href="consultoria.html?scroll=lineas">Líneas base de proyectos.</a></strong></li>
+    <li><strong><a href="consultoria.html?scroll=revaluo">Revaluó Técnico de Activos Fijos.</a></strong></li>
+    <li><strong><a href="consultoria.html?scroll=inventario">Inventarios.</a></strong></li>
+    <li><strong><a href="consultoria.html?scroll=sistemas">Elaboración e implementación de sistemas administrativos contables y de costos.</a></strong></li>
 `);
 });
 
