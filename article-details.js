@@ -19,10 +19,13 @@ export class ArticleDetail extends HTMLElement {
                     font-family: 'Arial', sans-serif;
                 }
                 .article img {
-                    width: 100%;
+                    width: 70%;
                     height: auto;
                     border-radius: 8px;
                     margin-bottom: 20px;
+                    margin: auto;
+                    align-content: center;
+                    display: flex;
                 }
                 .article h1 {
                     font-size: 2.5rem;
