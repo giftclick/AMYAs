@@ -20,7 +20,7 @@ export class Footer extends HTMLElement {
                             d="M41.5002 2.4165H30.7502C25.9984 2.4165 21.4412 4.1066 18.0812 7.115C14.7211 10.1234 12.8335 14.2037 12.8335 18.4582V28.0832H2.0835V40.9165H12.8335V66.5832H27.1668V40.9165H37.9168L41.5002 28.0832H27.1668V18.4582C27.1668 17.6073 27.5444 16.7912 28.2164 16.1895C28.8884 15.5879 29.7998 15.2498 30.7502 15.2498H41.5002V2.4165Z"
                             stroke="#758D70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <a class="social-button" href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+                    <a class="social-button" href="https://www.facebook.com/profile.php?id=100063928607895" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
                 </div>
             </div>
         </div>
@@ -48,8 +48,8 @@ export class Footer extends HTMLElement {
                 <li><a href="?scroll=contactanos-section">Contáctanos</a></li>
             </ul>
             <ul>
-                <li><a href="quienessomos.html">Acerca de AM</a></li>
-                <li><a href="separte.html">Se Parte de AM</a></li>
+                <li><a href="https://giftclick.github.io/AMYAs/quienessomos.html?scroll=quienes-somos-section">Acerca de AM</a></li>
+                <li><a href="https://giftclick.github.io/AMYAs/separte.html?scroll=se-parte-section">Se Parte de AM</a></li>
             </ul>
         </div>
     </footer>
