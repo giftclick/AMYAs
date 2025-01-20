@@ -61,21 +61,21 @@ export class ArticleDetail extends HTMLElement {
         // Datos de ejemplo para artículos
         const articles = {
             origami: {
-                title: "Cómo reconstruir un negocio con agilidad y crear resiliencia",
-                content: "En un entorno empresarial en constante cambio, la capacidad de adaptación se ha convertido en un pilar fundamental para la supervivencia y el éxito. Reconstruir un negocio con agilidad implica desarrollar estrategias que permitan responder rápidamente a los desafíos del mercado y a las necesidades cambiantes de los clientes. Esto requiere liderazgo decisivo, donde los líderes sean capaces de tomar decisiones informadas y oportunas basadas en datos confiables. <br><br>La capacidad de respuesta basada en datos permite identificar patrones, anticipar tendencias y minimizar riesgos. Además, la capacidad de remodelar rápidamente procesos, productos y modelos de negocio asegura que la organización no solo sobreviva, sino que prospere en tiempos de incertidumbre. La resiliencia empresarial no es un destino, sino un proceso continuo que se construye a través de la innovación, la colaboración y el aprendizaje constante.",
-                image: "./assets/origami.jpg",
-                date: "8 jul 2019",
+                title: "FUNDRAISING",
+                content: "En el mundo y el país existe una creciente demanda de financiación de proyectos que son captados a través de estrategias; una de ellas es el fundraising, que al ser una estrategia de relaciones públicas diseñada para captar recursos a medida que pasa el tiempo se convierte en una práctica cada vez más profesionalizada por las instituciones sin fines de lucro; esto debido a la motivación e inspiración ofrecida por los voluntarios que sumado al conocimiento muchas áreas como ser marketing, IT.<br><br>Con el fundraising se pretende apoyar a las organizaciones mediante la participación directa y compromiso de sus miembros, a través de la sensibilización, herramienta esencial para recaudar fondos. Sin embargo, un factor importante a la hora de recaudar fondos es la transparencia en el manejo del dinero en cuanto a su destino e impacto de las recaudaciones.",
+                image: "./assets/fun.JPG",
+                date: "20 ene 2025",
             },
             robot: {
-                title: "Is your portfolio fit for the future or fashioned only on the past?",
-                content: "In an era defined by rapid technological advancements and shifting market dynamics, the composition of your investment portfolio speaks volumes about your readiness for the future. A forward-looking portfolio is one that embraces innovation, integrates sustainable practices, and remains agile in the face of disruption. Relying solely on past performance is no longer sufficient; instead, investors must evaluate emerging trends such as artificial intelligence, renewable energy, and digital transformation. <br><br> Sustainability is not just a buzzword but a necessity for long-term growth, as businesses and markets increasingly prioritize environmental, social, and governance (ESG) criteria. Diversification across industries and geographies further mitigates risk and enhances resilience. The question remains: Is your portfolio a relic of the past, or is it strategically positioned to thrive in the future? The answer lies in your willingness to innovate, adapt, and invest in a vision that aligns with the evolving global landscape.",
-                image: "./assets/robot.jpg",
+                title: "Auditoría interna",
+                content: "La auditoría interna es un equilibrio que busca el bien común de la empresa, accionistas y del país. Se realiza de forma independiente y objetiva, siendo su objetivo la mejora de las operaciones de la entidad.<br><br>La auditoría interna evalúa los controles internos de una entidad incluyendo la gestión empresarial y los procesos contables.",
+                image: "./assets/articleinter.jpg",
                 date: "8 jul 2019",
             },
             negocio: {
-                title: "El futuro de los negocios: Innovación y sostenibilidad",
-                content: "El mundo empresarial enfrenta un punto de inflexión donde la innovación y la sostenibilidad no son opcionales, sino imprescindibles. La tecnología juega un papel crucial en esta transformación, permitiendo a las empresas automatizar procesos, mejorar la eficiencia y ofrecer experiencias personalizadas a los clientes. Sin embargo, la innovación no debe ser a expensas del medio ambiente o la sociedad. La sostenibilidad es un principio que debe integrarse en cada nivel de la operación empresarial, desde la cadena de suministro hasta la estrategia corporativa. <br><br>Empresas que priorizan la responsabilidad social y ambiental no solo cumplen con las expectativas regulatorias, sino que también ganan la lealtad de los consumidores y atraen talento comprometido con valores compartidos. En este contexto, la resiliencia también es clave, ya que las organizaciones deben estar preparadas para adaptarse rápidamente a las disrupciones y mantener su competitividad. El futuro de los negocios pertenece a aquellos que pueden equilibrar la innovación con la sostenibilidad, asegurando un impacto positivo tanto a corto como a largo plazo.",
-                image: "./assets/negocio.jpg",
+                title: "Inteligencia artificial (IA)",
+                content: "Las organizaciones tienen diferentes necesidades y en un mundo globalizado se debe tener una visión innovadora, reducir costos, incrementar ingresos, minimizar los riesgos y amenazas externas.<br><br>En el ámbito empresarial, la IA aún está en una etapa experimental y se aplica a nivel operativo nada más, sin ser una parte integrante de la toma de decisiones en los negocios. Sin embargo, esto puede cambiar rápidamente si se mejora el nivel de confianza y transparencia de los algoritmos.<br><br>La implementación de IA puede ahorrar tiempo y esfuerzo, y hacer que los resultados deseados de la auditoría sean sólidos y estén bien respaldados, sin embargo, si bien se ha logrado que la IA resuelva y operativice ciertas actividades, aún no puede reemplazar el análisis y razonamiento.",
+                image: "./assets/flower.jpg",
                 date: "8 jul 2019",
             },
         };
