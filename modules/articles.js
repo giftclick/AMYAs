@@ -16,7 +16,7 @@ export class Articles extends HTMLElement {
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/flower.jpg" alt="Origami on colored paper">
+                <img src="./assets/flower.jpg" alt="Origami on colored paper" id="ia">
                 <div class="card-content">
                     <h2><a href="articulo.html?id=negocio">Inteligencia artificial (IA)</a></h2>
                     <p>Las organizaciones tienen diferentes necesidades y en un mundo globalizado se debe tener una visión innovadora, reducir costos, incrementar ingresos, minimizar los riesgos y amenazas externas.</p>
