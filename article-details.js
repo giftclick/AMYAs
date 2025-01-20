@@ -70,13 +70,13 @@ export class ArticleDetail extends HTMLElement {
                 title: "Auditoría interna",
                 content: "La auditoría interna es un equilibrio que busca el bien común de la empresa, accionistas y del país. Se realiza de forma independiente y objetiva, siendo su objetivo la mejora de las operaciones de la entidad.<br><br>La auditoría interna evalúa los controles internos de una entidad incluyendo la gestión empresarial y los procesos contables.",
                 image: "./assets/articleinter.jpg",
-                date: "8 jul 2019",
+                date: "20 ene 2025",
             },
             negocio: {
                 title: "Inteligencia artificial (IA)",
                 content: "Las organizaciones tienen diferentes necesidades y en un mundo globalizado se debe tener una visión innovadora, reducir costos, incrementar ingresos, minimizar los riesgos y amenazas externas.<br><br>En el ámbito empresarial, la IA aún está en una etapa experimental y se aplica a nivel operativo nada más, sin ser una parte integrante de la toma de decisiones en los negocios. Sin embargo, esto puede cambiar rápidamente si se mejora el nivel de confianza y transparencia de los algoritmos.<br><br>La implementación de IA puede ahorrar tiempo y esfuerzo, y hacer que los resultados deseados de la auditoría sean sólidos y estén bien respaldados, sin embargo, si bien se ha logrado que la IA resuelva y operativice ciertas actividades, aún no puede reemplazar el análisis y razonamiento.",
                 image: "./assets/flower.jpg",
-                date: "8 jul 2019",
+                date: "20 ene 2025",
             },
         };
 
