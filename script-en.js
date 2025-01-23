@@ -69,10 +69,12 @@ document.getElementById('auditorias').addEventListener('click', function (event)
     event.preventDefault(); // Prevent the link from reloading the page
     updateContent('Audits', `At <strong>ARNEZ MIRANDA AND ASSOCIATES</strong>, we use the most advanced international auditing techniques that require planning and coordination of all the resources involved.<br><br>With these techniques, we ensure that the result of each audit is more efficient and cost-effective, developing work plans for each client, considering their market segment and geographic location.
         <ul class="audit-list">
-       <li><strong><a href="auditorias.html?scroll=estados-financieros">Financial Statement Audit</a></strong></li>
-        <li><strong><a href="auditorias.html?scroll=especiales">Special Audits</a></strong></li>
-        <li><strong><a href="auditorias.html?scroll=interna">Internal Audit</a></strong></li>
-        <li><strong><a href="auditorias.html?scroll=interna">Forensic Audit</a></strong></li>
+        <li><strong><a href="auditoriasEN.html?scroll=estados-financieros">Financial Statement Audit</a></strong></li>
+        <li><strong><a href="auditoriasEN.html?scroll=especiales">Special Audits</a></strong></li>
+        <li><strong><a href="auditoriasEN.html?scroll=interna">Internal Audit</a></strong></li>
+        <li><strong><a href="auditoriasEN.html?scroll=forense">Forensic Audit</a></strong></li>
+        <li><strong><a href="auditoriasEN.html?scroll=seguridad">Information Security Audit</a></strong></li>
+         <li><strong><a href="auditoriasEN.html?scroll=normativo">Regulatory Compliance Audit</a></strong></li>
         </ul>`);
 });
 
@@ -82,8 +84,8 @@ document.getElementById('outsourcing').addEventListener('click', function (event
         <ul class="audit-list">
         <li>Processing company information and issuing required financial reports.</li> 
         <li>Internal audits through compliance reviews according to a work plan designed for that purpose.</li>
-        <li><strong><a href="outsourcing.html?scroll=interna">Accounting Outsourcing</a></strong></li>
-        <li><strong><a href="outsourcing.html?scroll=interna1">Internal Audit Outsourcing</a></strong></li>
+        <li><strong><a href="outsourcingEN.html?scroll=interna">Accounting Outsourcing</a></strong></li>
+        <li><strong><a href="outsourcingEN.html?scroll=interna1">Internal Audit Outsourcing</a></strong></li>
         </ul>`);
 });
 
@@ -93,7 +95,7 @@ document.getElementById('asesoramiento-tributario').addEventListener('click', fu
     Our tax experts understand the fiscal consequences of each decision and work closely with our clients to ensure that no opportunity to save on taxes is missed through the use of all available tax tools.<br><br>
     We keep our clients continuously informed about changes in laws, supreme decrees, and regulatory standards.<br><br>
     <ul class="audit-list">
-    <li><strong><a href="tributario.html?scroll=interna">Our Professional Services</a></strong></li>
+    <li><strong><a href="tributarioEN.html?scroll=interna">Our Professional Services</a></strong></li>
     </ul>
 `);
 });
@@ -102,15 +104,16 @@ document.getElementById('consultorias').addEventListener('click', function (even
     event.preventDefault(); // Prevent the link from reloading the page
     updateContent('Consulting', `At <strong>ARNEZ MIRANDA AND ASSOCIATES</strong>, we expand our services to provide comprehensive consulting to institutions, offering the following consulting services.<br><br>
     Our consultants, experts in technical appraisals, inventories, manual preparation, etc., understand our clients' needs and are committed to providing efficient and cost-effective services.<br><br>
-    <strong>Our Professional Services:</strong><ul class="audit-list">
-    <li>Mid-term, Final, and Post-Project Technical Evaluations.</li>
-    <li>Fundraising for non-profit organizations.</li>
-    <li>Systematization of experiences.</li>
-    <li>Project baseline development.</li>    
-    <li>Technical Revaluation of Fixed Assets.</li>
-    <li>Inventories.</li>
-    <li>Development and implementation of administrative, accounting, and cost systems.</li></ul>
-`);
+    <strong>Our Professional Services:</strong>
+    <ul class="audit-list">
+    <li><strong><a href="consultoriaEN.html?scroll=evaluaciones">Mid-term, Final, and Post-Project Technical Evaluations.</a></strong></li>
+    <li><strong><a href="consultoriaEN.html?scroll=fundraising">Fundraising for non-profit organizations.</a></strong></li>
+    <li><strong><a href="consultoriaEN.html?scroll=exp">Systematization of experiences.</a></strong></li>
+    <li><strong><a href="consultoriaEN.html?scroll=lineas">Project baseline development.</a></strong></li>
+    <li><strong><a href="consultoriaEN.html?scroll=revaluo">Technical Revaluation of Fixed Assets.</a></strong></li>
+    <li><strong><a href="consultoriaEN.html?scroll=inventario">Inventories.</a></strong></li>
+    <li><strong><a href="consultoriaEN.html?scroll=sistemas">Development and implementation of administrative, accounting, and cost systems.</a></strong></li>
+    `);
 });
 
 // Toggle visibility of the "Industrias" section
